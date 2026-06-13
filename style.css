@@ -467,10 +467,13 @@ section { padding: 120px 0; }
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; /* Center mockup/terminal horizontally */
 }
 
 .project-visual .terminal {
     margin: 0;
+    width: 100%;
+    max-width: 440px;
 }
 
 /* Tabs Switcher */
@@ -483,7 +486,7 @@ section { padding: 120px 0; }
     border-radius: 20px;
     width: fit-content;
     border: 1px solid var(--border);
-    align-self: flex-start;
+    align-self: center; /* Center the tabs switcher */
 }
 
 .tab-btn {
@@ -510,6 +513,13 @@ section { padding: 120px 0; }
     box-shadow: 0 2px 8px rgba(41, 151, 255, 0.3);
 }
 
+.tab-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .tab-content.hidden {
     display: none !important;
 }
@@ -523,6 +533,8 @@ section { padding: 120px 0; }
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 440px; /* Cap width to make it compact and neat */
 }
 
 .window-header {
