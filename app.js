@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── 7. Interactive Terminal Demo ──
     const terminalBtn = document.getElementById('terminal-start');
     const terminalOutput = document.getElementById('terminal-output');
+    const terminalInput = document.getElementById('terminal-input-field');
     let terminalRunning = false;
 
     const terminalLinesEN = [
@@ -168,14 +169,36 @@ document.addEventListener('DOMContentLoaded', () => {
         { type: 'success', text: '═══ Пайплайн завершено. 38 лідів збережено в базу. ═══' },
     ];
 
-    terminalBtn.addEventListener('click', () => {
+    const commandsEN = {
+        help: 'Available commands:\n  help     - Show this help menu\n  run      - Start scraping simulation demo\n  projects - List all key projects\n  about    - Show info about Vladyslav\n  clear    - Clear terminal screen',
+        about: 'Vladyslav Manko\nRole: Python & AI Automation Engineer\nExperience: 1+ Year in building backend APIs & scrapers\nTech Stack: Python, FastAPI, Playwright, Docker, GCP, OpenAI/Gemini',
+        projects: '1. Lead Processing Service (FastAPI, GCP, Docker)\n2. Lead Console (Playwright, Scraper, WebSockets)\n3. AI Audio Summarizer Bot (Telegram, LLM integration)\n4. Claude Code News Digest (Cron CLI script, Daily 9:00 AM)',
+        error: 'Command not found: "$CMD". Type "help" to view available commands.'
+    };
+
+    const commandsUA = {
+        help: 'Доступні команди:\n  help     - Показати це меню допомоги\n  run      - Запустити демо симуляції скрапінгу\n  projects - Список усіх ключових проєктів\n  about    - Інформація про Владислава\n  clear    - Очистити екран термінала',
+        about: 'Владислав Манько\nСпеціалізація: Python & AI Automation Engineer\nДосвід: 1+ рік розробки backend API та скраперів\nСтек: Python, FastAPI, Playwright, Docker, GCP, OpenAI/Gemini',
+        projects: '1. Lead Processing Service (FastAPI, GCP, Docker)\n2. Lead Console (Playwright, Scraper, WebSockets)\n3. AI Audio Summarizer Bot (Telegram, інтеграція LLM)\n4. Claude Code News Digest (Cron CLI скрипт, щодня о 9:00)',
+        error: 'Команду "$CMD" не знайдено. Введіть "help" для перегляду списку команд.'
+    };
+
+    function printOutput(text, type = 'default') {
+        const div = document.createElement('div');
+        div.className = `terminal-line t-${type}`;
+        div.innerHTML = text.replace(/\n/g, '<br>').replace(/ /g, '&nbsp;');
+        terminalOutput.appendChild(div);
+        terminalOutput.scrollTop = terminalOutput.scrollHeight;
+    }
+
+    function runDemo() {
         if (terminalRunning) return;
         terminalRunning = true;
         terminalBtn.disabled = true;
+        terminalInput.disabled = true;
         terminalBtn.textContent = currentLang === 'ua' ? '⏳ Виконується...' : '⏳ Running...';
 
-        // Clear terminal
-        terminalOutput.innerHTML = '';
+        printOutput(`python -m lead_console --niche "Стоматологія" --city "Київ"`, 'cmd');
 
         const lines = currentLang === 'ua' ? terminalLinesUA : terminalLinesEN;
         let i = 0;
@@ -184,6 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (i >= lines.length) {
                 terminalRunning = false;
                 terminalBtn.disabled = false;
+                terminalInput.disabled = false;
                 terminalBtn.textContent = currentLang === 'ua' ? '▶ Запустити знову' : '▶ Run Again';
                 terminalBtn.setAttribute('data-en', '▶ Run Again');
                 terminalBtn.setAttribute('data-ua', '▶ Запустити знову');
@@ -191,28 +215,66 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const line = lines[i];
-            const div = document.createElement('div');
-            div.className = 'terminal-line';
-
-            const colorClass = `t-${line.type}`;
-            div.innerHTML = `<span class="${colorClass}">${escapeHtml(line.text)}</span>`;
-
-            terminalOutput.appendChild(div);
-            terminalOutput.scrollTop = terminalOutput.scrollHeight;
+            printOutput(line.text, line.type);
             i++;
 
-            // Variable delay for realism
             const delay = line.type === 'data' ? 300 : line.type === 'dim' ? 200 : 400;
             setTimeout(addLine, delay + Math.random() * 150);
         }
 
-        // Initial prompt line
-        const promptDiv = document.createElement('div');
-        promptDiv.className = 'terminal-line';
-        promptDiv.innerHTML = `<span class="t-prompt">$</span> <span class="t-cmd">python -m lead_console --niche "Стоматологія" --city "Київ"</span>`;
-        terminalOutput.appendChild(promptDiv);
-
         setTimeout(addLine, 600);
+    }
+
+    terminalBtn.addEventListener('click', () => {
+        terminalOutput.innerHTML = '';
+        runDemo();
+    });
+
+    // Focus input on clicking anywhere in terminal body
+    terminalOutput.addEventListener('click', () => {
+        terminalInput.focus();
+    });
+
+    terminalInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            const inputVal = terminalInput.value.trim();
+            terminalInput.value = '';
+
+            if (!inputVal) return;
+
+            // Output command prompt
+            const promptDiv = document.createElement('div');
+            promptDiv.className = 'terminal-line';
+            promptDiv.innerHTML = `<span class="t-prompt">$</span> <span class="t-cmd">${escapeHtml(inputVal)}</span>`;
+            terminalOutput.appendChild(promptDiv);
+
+            if (terminalRunning) {
+                printOutput(currentLang === 'ua' ? 'Будь ласка, зачекайте завершення поточного процесу...' : 'Please wait for the current process to complete...', 'warn');
+                return;
+            }
+
+            const command = inputVal.toLowerCase();
+
+            if (command === 'clear') {
+                terminalOutput.innerHTML = '';
+            } else if (command === 'run') {
+                runDemo();
+            } else if (command === 'help') {
+                const text = currentLang === 'ua' ? commandsUA.help : commandsEN.help;
+                printOutput(text, 'dim');
+            } else if (command === 'about' || command === 'whoami') {
+                const text = currentLang === 'ua' ? commandsUA.about : commandsEN.about;
+                printOutput(text, 'success');
+            } else if (command === 'projects') {
+                const text = currentLang === 'ua' ? commandsUA.projects : commandsEN.projects;
+                printOutput(text, 'data');
+            } else {
+                let errText = currentLang === 'ua' ? commandsUA.error : commandsEN.error;
+                errText = errText.replace('$CMD', escapeHtml(inputVal));
+                printOutput(errText, 'error');
+            }
+            terminalOutput.scrollTop = terminalOutput.scrollHeight;
+        }
     });
 
     function escapeHtml(text) {

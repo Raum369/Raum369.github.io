@@ -524,7 +524,7 @@ section { padding: 120px 0; }
 .terminal-btn {
     display: block;
     width: calc(100% - 32px);
-    margin: 0 16px 16px;
+    margin: 16px 16px;
     padding: 10px;
     background: rgba(41, 151, 255, 0.1);
     color: var(--accent);
@@ -538,6 +538,36 @@ section { padding: 120px 0; }
 }
 .terminal-btn:hover { background: rgba(41, 151, 255, 0.2); }
 .terminal-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.terminal-input-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: #151517;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.terminal-input-bar .t-prompt {
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 0.78rem;
+}
+
+#terminal-input-field {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 0.78rem;
+    caret-color: var(--accent);
+}
+
+#terminal-input-field::placeholder {
+    color: var(--text-muted);
+    opacity: 0.6;
+}
 
 /* ── Skills ── */
 .skills-grid {
@@ -651,13 +681,13 @@ footer {
 /* ── Animations / Reveal ── */
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: scale(0.96) translateY(40px);
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1) translateY(0);
 }
 
 @keyframes fadeInUp {
