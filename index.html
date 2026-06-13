@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vladyslav Manko — Python & AI Automation Engineer</title>
+    <meta name="description" content="Portfolio of Vladyslav Manko — Python Backend & AI Automation Engineer. FastAPI, Docker, GCP, OpenAI, Playwright.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">VM</a>
+            <div class="nav-links">
+                <a href="#about" data-en="About" data-ua="Про мене">About</a>
+                <a href="#projects" data-en="Projects" data-ua="Проєкти">Projects</a>
+                <a href="#skills" data-en="Skills" data-ua="Навички">Skills</a>
+                <a href="#contact" data-en="Contact" data-ua="Контакти">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button id="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-divider">/</span>
+                    <span class="lang-option" data-lang="ua">UA</span>
+                </button>
+                <a href="https://github.com/Raum369" target="_blank" class="nav-github" aria-label="GitHub">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section id="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content reveal">
+            <p class="hero-greeting" data-en="Hello, I'm" data-ua="Привіт, я">Hello, I'm</p>
+            <h1 class="hero-name">Vladyslav Manko</h1>
+            <p class="hero-title" data-en="Python & AI Automation Engineer" data-ua="Python & AI Automation Engineer">Python & AI Automation Engineer</p>
+            <p class="hero-subtitle" data-en="I build robust backend systems, AI-driven pipelines, and automation tools that solve real business problems." data-ua="Я створюю надійні бекенд-системи, AI-пайплайни та інструменти автоматизації, які вирішують реальні бізнес-задачі.">I build robust backend systems, AI-driven pipelines, and automation tools that solve real business problems.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary" data-en="View Projects" data-ua="Переглянути проєкти">View Projects</a>
+                <a href="#contact" class="btn-secondary" data-en="Get in Touch" data-ua="Зв'язатися">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about">
+        <div class="section-container">
+            <h2 class="section-label reveal" data-en="About" data-ua="Про мене">About</h2>
+            <div class="about-grid reveal">
+                <div class="about-text">
+                    <p data-en="Python & AI Engineer with experience in building robust backend applications and AI-driven automation systems. Skilled in Python, FastAPI, asyncio, PostgreSQL, MongoDB, Redis, Docker, and integrating LLM APIs (OpenAI, Anthropic, Gemini)." data-ua="Python & AI інженер з досвідом створення надійних бекенд-додатків та AI-систем автоматизації. Вмію працювати з Python, FastAPI, asyncio, PostgreSQL, MongoDB, Redis, Docker та інтеграцією LLM API (OpenAI, Anthropic, Gemini).">Python & AI Engineer with experience in building robust backend applications and AI-driven automation systems. Skilled in Python, FastAPI, asyncio, PostgreSQL, MongoDB, Redis, Docker, and integrating LLM APIs (OpenAI, Anthropic, Gemini).</p>
+                    <p data-en="I focus on solving business challenges by designing reliable backend architectures, optimizing API workflows, and automating routine processes. I've worked on projects involving automated lead processing, custom CRM integrations, and interactive Telegram bots." data-ua="Я фокусуюсь на вирішенні бізнес-завдань через проектування надійних бекенд-архітектур, оптимізацію API-воркфлоу та автоматизацію рутинних процесів. Працював над проєктами автоматизованої обробки лідів, інтеграціями з CRM та інтерактивними Telegram-ботами.">I focus on solving business challenges by designing reliable backend architectures, optimizing API workflows, and automating routine processes. I've worked on projects involving automated lead processing, custom CRM integrations, and interactive Telegram bots.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label" data-en="Production Projects" data-ua="Продакшн проєктів">Production Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="1">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label" data-en="Year Experience" data-ua="Рік досвіду">Year Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="8">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label" data-en="Technologies" data-ua="Технологій">Technologies</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section id="projects">
+        <div class="section-container">
+            <h2 class="section-label reveal" data-en="Key Projects" data-ua="Ключові проєкти">Key Projects</h2>
+
+            <!-- PROJECT 1: Lead Processing Service -->
+            <article class="project-card reveal" id="project-lead-processing">
+                <div class="project-header">
+                    <span class="project-tag">Backend / AI</span>
+                    <h3 class="project-title" data-en="Lead Processing Service" data-ua="Сервіс обробки лідів">Lead Processing Service</h3>
+                    <p class="project-stack">Python · FastAPI · Docker · GCP · OpenAI</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-desc" data-en="Asynchronous FastAPI microservice that ingests, validates, and processes high-volume B2B leads using OpenAI (gpt-4o-mini) Structured Outputs. Deployed on Google Cloud Platform with centralized logging." data-ua="Асинхронний FastAPI-мікросервіс для прийому, валідації та обробки великих обсягів B2B-лідів з використанням OpenAI (gpt-4o-mini) Structured Outputs. Розгорнутий на Google Cloud Platform із централізованим логуванням.">Asynchronous FastAPI microservice that ingests, validates, and processes high-volume B2B leads using OpenAI (gpt-4o-mini) Structured Outputs. Deployed on Google Cloud Platform with centralized logging.</p>
+                    <ul class="project-features">
+                        <li data-en="HMAC-SHA256 webhook signature verification" data-ua="Верифікація підписів вебхуків через HMAC-SHA256">HMAC-SHA256 webhook signature verification</li>
+                        <li data-en="Tenacity resilience layer — 99.9% uptime" data-ua="Шар стійкості Tenacity — 99.9% аптайм">Tenacity resilience layer — 99.9% uptime</li>
+                        <li data-en="Docker Compose (FastAPI + PostgreSQL)" data-ua="Docker Compose (FastAPI + PostgreSQL)">Docker Compose (FastAPI + PostgreSQL)</li>
+                        <li data-en="Google Compute Engine + Cloud Logging" data-ua="Google Compute Engine + Cloud Logging">Google Compute Engine + Cloud Logging</li>
+                    </ul>
+                    <div class="project-badges">
+                        <span>FastAPI</span><span>Pydantic</span><span>Tenacity</span><span>Docker</span><span>GCP</span><span>PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/Raum369" target="_blank" class="project-link" data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
+                </div>
+            </article>
+
+            <!-- PROJECT 2: Lead Console (with terminal) -->
+            <article class="project-card project-card--featured reveal" id="project-lead-console">
+                <div class="project-header">
+                    <span class="project-tag project-tag--accent">SaaS / Automation</span>
+                    <h3 class="project-title" data-en="Lead Console — Real-Time Lead Finder" data-ua="Lead Console — Пошук клієнтів в реальному часі">Lead Console — Real-Time Lead Finder</h3>
+                    <p class="project-stack">Python · FastAPI · Playwright · WebSockets</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-desc" data-en="Micro-SaaS application for automated local client prospecting. Playwright scrapes Google Maps, extracts business data, then BS4/HTTPX scrapers pull Instagram, Telegram, Viber, and Email contacts. Live WebSocket telemetry dashboard." data-ua="Micro-SaaS застосунок для автоматизованого пошуку локальних клієнтів. Playwright скрапить Google Maps, витягує дані бізнесів, потім BS4/HTTPX скрейпери збирають Instagram, Telegram, Viber та Email контакти. Дашборд телеметрії в реальному часі через WebSocket.">Micro-SaaS application for automated local client prospecting. Playwright scrapes Google Maps, extracts business data, then BS4/HTTPX scrapers pull Instagram, Telegram, Viber, and Email contacts. Live WebSocket telemetry dashboard.</p>
+                    <ul class="project-features">
+                        <li data-en="Playwright browser automation for Google Maps" data-ua="Браузерна автоматизація Playwright для Google Maps">Playwright browser automation for Google Maps</li>
+                        <li data-en="Async worker layer: BS4 + HTTPX scrapers" data-ua="Асинхронний робочий шар: BS4 + HTTPX скрейпери">Async worker layer: BS4 + HTTPX scrapers</li>
+                        <li data-en="FastAPI WebSockets — live progress streaming" data-ua="FastAPI WebSockets — стрімінг прогресу в реальному часі">FastAPI WebSockets — live progress streaming</li>
+                    </ul>
+                    <div class="project-badges">
+                        <span>Playwright</span><span>WebSockets</span><span>BS4</span><span>SQLite</span><span>Tailwind CSS</span>
+                    </div>
+                    <!-- Interactive Terminal -->
+                    <div class="terminal" id="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="terminal-title">lead-console — live demo</span>
+                        </div>
+                        <div class="terminal-body" id="terminal-output">
+                            <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd" data-en="Starting Lead Console..." data-ua="Запуск Lead Console...">Starting Lead Console...</span></div>
+                        </div>
+                        <button class="terminal-btn" id="terminal-start" data-en="▶ Run Demo" data-ua="▶ Запустити демо">▶ Run Demo</button>
+                    </div>
+                    <a href="https://github.com/Raum369" target="_blank" class="project-link" data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
+                </div>
+            </article>
+
+            <!-- PROJECT 3: AI Audio Summarizer Bot -->
+            <article class="project-card reveal" id="project-audio-bot">
+                <div class="project-header">
+                    <span class="project-tag">Telegram Bot / AI</span>
+                    <h3 class="project-title" data-en="AI Audio Summarizer Bot" data-ua="AI Бот-Сумаризатор Аудіо">AI Audio Summarizer Bot</h3>
+                    <p class="project-stack">Python · Aiogram 3 · Groq Whisper · Gemini</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-desc" data-en="Telegram bot that receives voice messages and audio files of any length, transcribes them using Groq Whisper API, then generates structured summaries with Google Gemini. Intelligently chunks large files, processes them in parallel, and delivers concise key-point summaries directly in the chat." data-ua="Telegram-бот, який приймає голосові повідомлення та аудіофайли будь-якої тривалості, транскрибує їх через Groq Whisper API, а потім генерує структуровані саммарі за допомогою Google Gemini. Інтелектуально розбиває великі файли, обробляє їх паралельно та повертає стислі тези безпосередньо в чат.">Telegram bot that receives voice messages and audio files of any length, transcribes them using Groq Whisper API, then generates structured summaries with Google Gemini. Intelligently chunks large files, processes them in parallel, and delivers concise key-point summaries directly in the chat.</p>
+                    <ul class="project-features">
+                        <li data-en="Automatic audio chunking with PyDub for files exceeding API limits" data-ua="Автоматичне розбиття аудіо через PyDub для файлів, що перевищують ліміти API">Automatic audio chunking with PyDub for files exceeding API limits</li>
+                        <li data-en="Groq Whisper API for fast, accurate speech-to-text" data-ua="Groq Whisper API для швидкого та точного розпізнавання мовлення">Groq Whisper API for fast, accurate speech-to-text</li>
+                        <li data-en="Google Gemini for structured summarization with key points" data-ua="Google Gemini для структурованої сумаризації з ключовими тезами">Google Gemini for structured summarization with key points</li>
+                        <li data-en="Async architecture with Aiogram 3 for responsive UX" data-ua="Асинхронна архітектура на Aiogram 3 для швидкого відгуку">Async architecture with Aiogram 3 for responsive UX</li>
+                    </ul>
+                    <div class="project-badges">
+                        <span>Aiogram 3</span><span>Groq Whisper</span><span>Gemini</span><span>PyDub</span><span>asyncio</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 4: News Digest Tool -->
+            <article class="project-card reveal" id="project-news-digest">
+                <div class="project-header">
+                    <span class="project-tag">CLI Tool / AI</span>
+                    <h3 class="project-title" data-en="Claude Code News Digest" data-ua="Claude Code Дайджест Новин">Claude Code News Digest</h3>
+                    <p class="project-stack">Python · Playwright · LLM Agents</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-desc" data-en="Automated news digest system that scrapes top news sources every morning and delivers a curated, AI-summarized digest at 9:00 AM daily. Integrated into the Claude Code CLI workspace using custom MCP configurations and LLM summarizing agents." data-ua="Автоматизована система новинних дайджестів, яка скрапить топові новинні джерела щоранку та доставляє курований, AI-сумаризований дайджест щодня о 9:00. Інтегрована в робочий простір Claude Code CLI через кастомні MCP-конфігурації та LLM-агентів.">Automated news digest system that scrapes top news sources every morning and delivers a curated, AI-summarized digest at 9:00 AM daily. Integrated into the Claude Code CLI workspace using custom MCP configurations and LLM summarizing agents.</p>
+                    <ul class="project-features">
+                        <li data-en="Scheduled daily execution — fresh digest at 9:00 AM automatically" data-ua="Щоденний автозапуск — свіжий дайджест о 9:00 автоматично">Scheduled daily execution — fresh digest at 9:00 AM automatically</li>
+                        <li data-en="Playwright scrapers for multi-source news extraction" data-ua="Playwright-скрейпери для витягування новин з багатьох джерел">Playwright scrapers for multi-source news extraction</li>
+                        <li data-en="LLM agents for intelligent summarization and categorization" data-ua="LLM-агенти для інтелектуальної сумаризації та категоризації">LLM agents for intelligent summarization and categorization</li>
+                        <li data-en="Custom MCP (Model Context Protocol) integration" data-ua="Кастомна інтеграція MCP (Model Context Protocol)">Custom MCP (Model Context Protocol) integration</li>
+                    </ul>
+                    <div class="project-badges">
+                        <span>Playwright</span><span>LLM Agents</span><span>MCP</span><span>Python</span><span>Scheduler</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS ═══════════════ -->
+    <section id="skills">
+        <div class="section-container">
+            <h2 class="section-label reveal" data-en="Skills & Stack" data-ua="Навички та стек">Skills & Stack</h2>
+            <div class="skills-grid reveal">
+                <div class="skill-group">
+                    <h4 data-en="Languages & Frameworks" data-ua="Мови та фреймворки">Languages & Frameworks</h4>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-level="95"><span class="skill-name">Python</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="90"><span class="skill-name">FastAPI</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="85"><span class="skill-name">Pydantic</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="80"><span class="skill-name">SQLAlchemy</span><div class="bar"><div class="bar-fill"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4 data-en="Automation & Scraping" data-ua="Автоматизація та скрапінг">Automation & Scraping</h4>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-level="90"><span class="skill-name">Playwright</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="85"><span class="skill-name">BeautifulSoup4</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="88"><span class="skill-name">HTTPX / asyncio</span><div class="bar"><div class="bar-fill"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4 data-en="Databases & Queues" data-ua="Бази даних та черги">Databases & Queues</h4>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-level="85"><span class="skill-name">PostgreSQL</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="80"><span class="skill-name">SQLite</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="70"><span class="skill-name">Redis / Celery</span><div class="bar"><div class="bar-fill"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4 data-en="DevOps & Cloud" data-ua="DevOps та хмари">DevOps & Cloud</h4>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-level="85"><span class="skill-name">Docker / Compose</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="75"><span class="skill-name">GCP / GCE</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="80"><span class="skill-name">Git / GitHub</span><div class="bar"><div class="bar-fill"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4 data-en="AI & API Integrations" data-ua="AI та API інтеграції">AI & API Integrations</h4>
+                    <div class="skill-bars">
+                        <div class="skill-bar" data-level="88"><span class="skill-name">OpenAI API</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="85"><span class="skill-name">Google Gemini</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="80"><span class="skill-name">Groq / Llama</span><div class="bar"><div class="bar-fill"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section id="contact">
+        <div class="section-container contact-container reveal">
+            <h2 class="section-label" data-en="Let's Work Together" data-ua="Давайте працювати разом">Let's Work Together</h2>
+            <p class="contact-text" data-en="I'm open to freelance projects, full-time positions, and interesting collaborations in Python backend and AI automation." data-ua="Відкритий до фриланс-проєктів, постійних позицій та цікавих колаборацій у Python-бекенді та AI-автоматизації.">I'm open to freelance projects, full-time positions, and interesting collaborations in Python backend and AI automation.</p>
+            <div class="contact-links">
+                <a href="mailto:raum3969@gmail.com" class="contact-card">
+                    <span class="contact-icon">✉</span>
+                    <span>raum3969@gmail.com</span>
+                </a>
+                <a href="https://github.com/Raum369" target="_blank" class="contact-card">
+                    <span class="contact-icon">⌨</span>
+                    <span>github.com/Raum369</span>
+                </a>
+                <a href="tel:+380689419486" class="contact-card">
+                    <span class="contact-icon">☎</span>
+                    <span>068-941-94-86</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer>
+        <p>© 2026 Vladyslav Manko. <span data-en="Built with passion." data-ua="Створено з пристрастю.">Built with passion.</span></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
