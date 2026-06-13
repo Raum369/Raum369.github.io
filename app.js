@@ -109,6 +109,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // ── 6.5. Interactive Tabs Switcher (scoped to each visual card) ──
+    document.querySelectorAll('.project-visual').forEach(visualContainer => {
+        const tabButtons = visualContainer.querySelectorAll('.tab-btn');
+        const tabContents = visualContainer.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabName = btn.dataset.tab;
+                
+                // Deactivate buttons inside this visual container only
+                tabButtons.forEach(b => b.classList.remove('active'));
+                // Hide contents inside this visual container only
+                tabContents.forEach(c => c.classList.add('hidden'));
+                
+                // Activate selected button
+                btn.classList.add('active');
+                // Show corresponding content inside this visual container
+                const targetContent = visualContainer.querySelector(`[data-tab-content="${tabName}"]`);
+                if (targetContent) {
+                    targetContent.classList.remove('hidden');
+                }
+            });
+        });
+    });
+
     // ── 7. Interactive Terminal Demo ──
     const terminalBtn = document.getElementById('terminal-start');
     const terminalOutput = document.getElementById('terminal-output');

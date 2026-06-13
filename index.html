@@ -107,84 +107,170 @@
             </article>
 
             <!-- PROJECT 2: Lead Console (with terminal) -->
-            <article class="project-card project-card--featured reveal" id="project-lead-console">
-                <div class="project-header">
-                    <span class="project-tag project-tag--accent">SaaS / Automation</span>
-                    <h3 class="project-title" data-en="Lead Console — Real-Time Lead Finder" data-ua="Lead Console — Пошук клієнтів в реальному часі">Lead Console — Real-Time Lead Finder</h3>
-                    <p class="project-stack">Python · FastAPI · Playwright · WebSockets</p>
+            <article class="project-card project-card--featured reveal has-visual" id="project-lead-console">
+                <div class="project-details">
+                    <div class="project-header">
+                        <span class="project-tag project-tag--accent">SaaS / Automation</span>
+                        <h3 class="project-title" data-en="Lead Console — Real-Time Lead Finder" data-ua="Lead Console — Пошук клієнтів в реальному часі">Lead Console — Real-Time Lead Finder</h3>
+                        <p class="project-stack">Python · FastAPI · Playwright · WebSockets</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc" data-en="Micro-SaaS application for automated local client prospecting. Playwright scrapes Google Maps, extracts business data, then BS4/HTTPX scrapers pull Instagram, Telegram, Viber, and Email contacts. Live WebSocket telemetry dashboard." data-ua="Micro-SaaS застосунок для автоматизованого пошуку локальних клієнтів. Playwright скрапить Google Maps, витягує дані бізнесів, потім BS4/HTTPX скрейпери збирають Instagram, Telegram, Viber та Email контакти. Дашборд телеметрії в реальному часі через WebSocket.">Micro-SaaS application for automated local client prospecting. Playwright scrapes Google Maps, extracts business data, then BS4/HTTPX scrapers pull Instagram, Telegram, Viber, and Email contacts. Live WebSocket telemetry dashboard.</p>
+                        <ul class="project-features">
+                            <li data-en="Playwright browser automation for Google Maps" data-ua="Браузерна автоматизація Playwright для Google Maps">Playwright browser automation for Google Maps</li>
+                            <li data-en="Async worker layer: BS4 + HTTPX scrapers" data-ua="Асинхронний робочий шар: BS4 + HTTPX скрейпери">Async worker layer: BS4 + HTTPX scrapers</li>
+                            <li data-en="FastAPI WebSockets — live progress streaming" data-ua="FastAPI WebSockets — стрімінг прогресу в реальному часі">FastAPI WebSockets — live progress streaming</li>
+                        </ul>
+                        <div class="project-badges">
+                            <span>Playwright</span><span>WebSockets</span><span>BS4</span><span>SQLite</span><span>Tailwind CSS</span>
+                        </div>
+                        <a href="https://github.com/Raum369" target="_blank" class="project-link" data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
+                    </div>
                 </div>
-                <div class="project-body">
-                    <p class="project-desc" data-en="Micro-SaaS application for automated local client prospecting. Playwright scrapes Google Maps, extracts business data, then BS4/HTTPX scrapers pull Instagram, Telegram, Viber, and Email contacts. Live WebSocket telemetry dashboard." data-ua="Micro-SaaS застосунок для автоматизованого пошуку локальних клієнтів. Playwright скрапить Google Maps, витягує дані бізнесів, потім BS4/HTTPX скрейпери збирають Instagram, Telegram, Viber та Email контакти. Дашборд телеметрії в реальному часі через WebSocket.">Micro-SaaS application for automated local client prospecting. Playwright scrapes Google Maps, extracts business data, then BS4/HTTPX scrapers pull Instagram, Telegram, Viber, and Email contacts. Live WebSocket telemetry dashboard.</p>
-                    <ul class="project-features">
-                        <li data-en="Playwright browser automation for Google Maps" data-ua="Браузерна автоматизація Playwright для Google Maps">Playwright browser automation for Google Maps</li>
-                        <li data-en="Async worker layer: BS4 + HTTPX scrapers" data-ua="Асинхронний робочий шар: BS4 + HTTPX скрейпери">Async worker layer: BS4 + HTTPX scrapers</li>
-                        <li data-en="FastAPI WebSockets — live progress streaming" data-ua="FastAPI WebSockets — стрімінг прогресу в реальному часі">FastAPI WebSockets — live progress streaming</li>
-                    </ul>
-                    <div class="project-badges">
-                        <span>Playwright</span><span>WebSockets</span><span>BS4</span><span>SQLite</span><span>Tailwind CSS</span>
+                <div class="project-visual">
+                    <div class="project-tabs">
+                        <button class="tab-btn active" data-tab="terminal" data-en="Interactive Console" data-ua="Інтерактивна консоль">Interactive Console</button>
+                        <button class="tab-btn" data-tab="screenshot" data-en="Dashboard UI" data-ua="Інтерфейс дашборду">Dashboard UI</button>
                     </div>
-                    <!-- Interactive Terminal -->
-                    <div class="terminal" id="terminal">
-                        <div class="terminal-header">
-                            <div class="terminal-dots">
-                                <span class="dot dot-red"></span>
-                                <span class="dot dot-yellow"></span>
-                                <span class="dot dot-green"></span>
+                    
+                    <div class="tab-content" id="tab-terminal-content" data-tab-content="terminal">
+                        <!-- Interactive Terminal -->
+                        <div class="terminal" id="terminal">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <span class="terminal-title">lead-console — live demo</span>
                             </div>
-                            <span class="terminal-title">lead-console — live demo</span>
+                            <div class="terminal-body" id="terminal-output">
+                                <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">help</span></div>
+                                <div class="terminal-line"><span class="t-dim" data-en="Type commands to interact with Jarvis. Available: help, run, projects, clear" data-ua="Введіть команди для взаємодії з Джарвісом. Доступно: help, run, projects, clear">Type commands to interact with Jarvis. Available: help, run, projects, clear</span></div>
+                            </div>
+                            <div class="terminal-input-bar">
+                                <span class="t-prompt">$</span>
+                                <input type="text" id="terminal-input-field" placeholder="type a command..." autocomplete="off" spellcheck="false">
+                            </div>
+                            <button class="terminal-btn" id="terminal-start" data-en="▶ Run Demo" data-ua="▶ Запустити демо">▶ Run Demo</button>
                         </div>
-                        <div class="terminal-body" id="terminal-output">
-                            <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">help</span></div>
-                            <div class="terminal-line"><span class="t-dim" data-en="Type commands to interact with Jarvis. Available: help, run, projects, clear" data-ua="Введіть команди для взаємодії з Джарвісом. Доступно: help, run, projects, clear">Type commands to interact with Jarvis. Available: help, run, projects, clear</span></div>
-                        </div>
-                        <div class="terminal-input-bar">
-                            <span class="t-prompt">$</span>
-                            <input type="text" id="terminal-input-field" placeholder="type a command..." autocomplete="off" spellcheck="false">
-                        </div>
-                        <button class="terminal-btn" id="terminal-start" data-en="▶ Run Demo" data-ua="▶ Запустити демо">▶ Run Demo</button>
                     </div>
-                    <a href="https://github.com/Raum369" target="_blank" class="project-link" data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
+
+                    <div class="tab-content hidden" id="tab-screenshot-content" data-tab-content="screenshot">
+                        <div class="window-mockup">
+                            <div class="window-header">
+                                <div class="window-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <span class="window-title">lead-console — dashboard</span>
+                            </div>
+                            <div class="window-body">
+                                <img src="assets/lead-console.png" alt="Lead Console Dashboard" class="window-image">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
 
             <!-- PROJECT 3: AI Audio Summarizer Bot -->
-            <article class="project-card reveal" id="project-audio-bot">
-                <div class="project-header">
-                    <span class="project-tag">Telegram Bot / AI</span>
-                    <h3 class="project-title" data-en="AI Audio Summarizer Bot" data-ua="AI Бот-Сумаризатор Аудіо">AI Audio Summarizer Bot</h3>
-                    <p class="project-stack">Python · Aiogram 3 · Groq Whisper · Gemini</p>
+            <article class="project-card reveal has-visual" id="project-audio-bot">
+                <div class="project-details">
+                    <div class="project-header">
+                        <span class="project-tag">Telegram Bot / AI</span>
+                        <h3 class="project-title" data-en="AI Audio Summarizer Bot" data-ua="AI Бот-Сумаризатор Аудіо">AI Audio Summarizer Bot</h3>
+                        <p class="project-stack">Python · Aiogram 3 · Groq Whisper · Gemini</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc" data-en="Telegram bot that receives voice messages and audio files of any length, transcribes them using Groq Whisper API, then generates structured summaries with Google Gemini. Intelligently chunks large files, processes them in parallel, and delivers concise key-point summaries directly in the chat." data-ua="Telegram-бот, який приймає голосові повідомлення та аудіофайли будь-якої тривалості, транскрибує їх через Groq Whisper API, а потім генерує структуровані саммарі за допомогою Google Gemini. Інтелектуально розбиває великі файли, обробляє їх паралельно та повертає стислі тези безпосередньо в чат.">Telegram bot that receives voice messages and audio files of any length, transcribes them using Groq Whisper API, then generates structured summaries with Google Gemini. Intelligently chunks large files, processes them in parallel, and delivers concise key-point summaries directly in the chat.</p>
+                        <ul class="project-features">
+                            <li data-en="Automatic audio chunking with PyDub for files exceeding API limits" data-ua="Автоматичне розбиття аудіо через PyDub для файлів, що перевищують ліміти API">Automatic audio chunking with PyDub for files exceeding API limits</li>
+                            <li data-en="Groq Whisper API for fast, accurate speech-to-text" data-ua="Groq Whisper API для швидкого та точного розпізнавання мовлення">Groq Whisper API for fast, accurate speech-to-text</li>
+                            <li data-en="Google Gemini for structured summarization with key points" data-ua="Google Gemini для структурованої сумаризації з ключовими тезами">Google Gemini for structured summarization with key points</li>
+                            <li data-en="Async architecture with Aiogram 3 for responsive UX" data-ua="Асинхронна архітектура на Aiogram 3 для швидкого відгуку">Async architecture with Aiogram 3 for responsive UX</li>
+                        </ul>
+                        <div class="project-badges">
+                            <span>Aiogram 3</span><span>Groq Whisper</span><span>Gemini</span><span>PyDub</span><span>asyncio</span>
+                        </div>
+                        <a href="https://github.com/Raum369" target="_blank" class="project-link" data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
+                    </div>
                 </div>
-                <div class="project-body">
-                    <p class="project-desc" data-en="Telegram bot that receives voice messages and audio files of any length, transcribes them using Groq Whisper API, then generates structured summaries with Google Gemini. Intelligently chunks large files, processes them in parallel, and delivers concise key-point summaries directly in the chat." data-ua="Telegram-бот, який приймає голосові повідомлення та аудіофайли будь-якої тривалості, транскрибує їх через Groq Whisper API, а потім генерує структуровані саммарі за допомогою Google Gemini. Інтелектуально розбиває великі файли, обробляє їх паралельно та повертає стислі тези безпосередньо в чат.">Telegram bot that receives voice messages and audio files of any length, transcribes them using Groq Whisper API, then generates structured summaries with Google Gemini. Intelligently chunks large files, processes them in parallel, and delivers concise key-point summaries directly in the chat.</p>
-                    <ul class="project-features">
-                        <li data-en="Automatic audio chunking with PyDub for files exceeding API limits" data-ua="Автоматичне розбиття аудіо через PyDub для файлів, що перевищують ліміти API">Automatic audio chunking with PyDub for files exceeding API limits</li>
-                        <li data-en="Groq Whisper API for fast, accurate speech-to-text" data-ua="Groq Whisper API для швидкого та точного розпізнавання мовлення">Groq Whisper API for fast, accurate speech-to-text</li>
-                        <li data-en="Google Gemini for structured summarization with key points" data-ua="Google Gemini для структурованої сумаризації з ключовими тезами">Google Gemini for structured summarization with key points</li>
-                        <li data-en="Async architecture with Aiogram 3 for responsive UX" data-ua="Асинхронна архітектура на Aiogram 3 для швидкого відгуку">Async architecture with Aiogram 3 for responsive UX</li>
-                    </ul>
-                    <div class="project-badges">
-                        <span>Aiogram 3</span><span>Groq Whisper</span><span>Gemini</span><span>PyDub</span><span>asyncio</span>
+                <div class="project-visual">
+                    <div class="project-tabs">
+                        <button class="tab-btn active" data-tab="chat" data-en="Chat Interface" data-ua="Інтерфейс чату">Chat Interface</button>
+                        <button class="tab-btn" data-tab="summary" data-en="AI Summary" data-ua="ШІ Саммарі">ШІ Саммарі</button>
+                    </div>
+                    
+                    <div class="tab-content" data-tab-content="chat">
+                        <div class="window-mockup">
+                            <div class="window-header">
+                                <div class="window-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <span class="window-title">telegram-bot — chat</span>
+                            </div>
+                            <div class="window-body">
+                                <img src="assets/audio-bot-1.png" alt="AI Audio Summarizer Telegram Bot Chat" class="window-image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content hidden" data-tab-content="summary">
+                        <div class="window-mockup">
+                            <div class="window-header">
+                                <div class="window-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <span class="window-title">telegram-bot — summary</span>
+                            </div>
+                            <div class="window-body">
+                                <img src="assets/audio-bot-2.png" alt="AI Audio Summarizer Telegram Bot Summary" class="window-image">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </article>
 
             <!-- PROJECT 4: News Digest Tool -->
-            <article class="project-card reveal" id="project-news-digest">
-                <div class="project-header">
-                    <span class="project-tag">CLI Tool / AI</span>
-                    <h3 class="project-title" data-en="Claude Code News Digest" data-ua="Claude Code Дайджест Новин">Claude Code News Digest</h3>
-                    <p class="project-stack">Python · Playwright · LLM Agents</p>
+            <article class="project-card reveal has-visual" id="project-news-digest">
+                <div class="project-details">
+                    <div class="project-header">
+                        <span class="project-tag">CLI Tool / AI</span>
+                        <h3 class="project-title" data-en="Claude Code News Digest" data-ua="Claude Code Дайджест Новин">Claude Code News Digest</h3>
+                        <p class="project-stack">Python · Playwright · LLM Agents</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc" data-en="Automated news digest system that scrapes top news sources every morning and delivers a curated, AI-summarized digest at 9:00 AM daily. Integrated into the Claude Code CLI workspace using custom MCP configurations and LLM summarizing agents." data-ua="Automated news digest system that scrapes top news sources every morning and delivers a curated, AI-summarized digest at 9:00 AM daily. Integrated into the Claude Code CLI workspace using custom MCP configurations and LLM summarizing agents.">Automated news digest system that scrapes top news sources every morning and delivers a curated, AI-summarized digest at 9:00 AM daily. Integrated into the Claude Code CLI workspace using custom MCP configurations and LLM summarizing agents.</p>
+                        <ul class="project-features">
+                            <li data-en="Scheduled daily execution — fresh digest at 9:00 AM automatically" data-ua="Щоденний автозапуск — свіжий дайджест о 9:00 автоматично">Scheduled daily execution — fresh digest at 9:00 AM automatically</li>
+                            <li data-en="Playwright scrapers for multi-source news extraction" data-ua="Playwright-скрейпери для витягування новин з багатьох джерел">Playwright scrapers for multi-source news extraction</li>
+                            <li data-en="LLM agents for intelligent summarization and categorization" data-ua="LLM-агенти для інтелектуальної сумаризації та категоризації">LLM agents for intelligent summarization and categorization</li>
+                            <li data-en="Custom MCP (Model Context Protocol) integration" data-ua="Кастомна інтеграція MCP (Model Context Protocol)">Custom MCP (Model Context Protocol) integration</li>
+                        </ul>
+                        <div class="project-badges">
+                            <span>Playwright</span><span>LLM Agents</span><span>MCP</span><span>Python</span><span>Scheduler</span>
+                        </div>
+                        <a href="https://github.com/Raum369" target="_blank" class="project-link" data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
+                    </div>
                 </div>
-                <div class="project-body">
-                    <p class="project-desc" data-en="Automated news digest system that scrapes top news sources every morning and delivers a curated, AI-summarized digest at 9:00 AM daily. Integrated into the Claude Code CLI workspace using custom MCP configurations and LLM summarizing agents." data-ua="Автоматизована система новинних дайджестів, яка скрапить топові новинні джерела щоранку та доставляє курований, AI-сумаризований дайджест щодня о 9:00. Інтегрована в робочий простір Claude Code CLI через кастомні MCP-конфігурації та LLM-агентів.">Automated news digest system that scrapes top news sources every morning and delivers a curated, AI-summarized digest at 9:00 AM daily. Integrated into the Claude Code CLI workspace using custom MCP configurations and LLM summarizing agents.</p>
-                    <ul class="project-features">
-                        <li data-en="Scheduled daily execution — fresh digest at 9:00 AM automatically" data-ua="Щоденний автозапуск — свіжий дайджест о 9:00 автоматично">Scheduled daily execution — fresh digest at 9:00 AM automatically</li>
-                        <li data-en="Playwright scrapers for multi-source news extraction" data-ua="Playwright-скрейпери для витягування новин з багатьох джерел">Playwright scrapers for multi-source news extraction</li>
-                        <li data-en="LLM agents for intelligent summarization and categorization" data-ua="LLM-агенти для інтелектуальної сумаризації та категоризації">LLM agents for intelligent summarization and categorization</li>
-                        <li data-en="Custom MCP (Model Context Protocol) integration" data-ua="Кастомна інтеграція MCP (Model Context Protocol)">Custom MCP (Model Context Protocol) integration</li>
-                    </ul>
-                    <div class="project-badges">
-                        <span>Playwright</span><span>LLM Agents</span><span>MCP</span><span>Python</span><span>Scheduler</span>
+                <div class="project-visual">
+                    <div class="window-mockup">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="window-title">news-digest — daily report</span>
+                        </div>
+                        <div class="window-body">
+                            <img src="assets/news-digest.png" alt="Claude Code News Digest CLI" class="window-image">
+                        </div>
                     </div>
                 </div>
             </article>

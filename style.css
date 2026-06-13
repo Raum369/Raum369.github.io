@@ -450,6 +450,140 @@ section { padding: 120px 0; }
 }
 .project-link:hover { transform: translateX(4px); }
 
+/* ── Project Visuals & Split Columns ── */
+.project-card.has-visual {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-visual {
+    background: #08080a;
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-visual .terminal {
+    margin: 0;
+}
+
+/* Tabs Switcher */
+.project-tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 4px;
+    border-radius: 20px;
+    width: fit-content;
+    border: 1px solid var(--border);
+    align-self: flex-start;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-secondary);
+    font-family: var(--font);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all var(--transition);
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+}
+
+.tab-btn.active {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(41, 151, 255, 0.3);
+}
+
+.tab-content.hidden {
+    display: none !important;
+}
+
+/* macOS-like Window Mockup */
+.window-mockup {
+    background: #1c1c1e;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+.window-header {
+    background: #2c2c2e;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.window-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.window-title {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.window-body {
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    aspect-ratio: 16/10;
+}
+
+.window-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.5s var(--transition);
+}
+
+.window-mockup:hover .window-image {
+    transform: scale(1.03);
+}
+
+@media (min-width: 900px) {
+    .project-card.has-visual {
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        align-items: stretch;
+    }
+    .project-visual {
+        border-top: none;
+        border-left: 1px solid var(--border);
+        padding: 40px;
+    }
+}
+
 /* ── Terminal ── */
 .terminal {
     background: #1c1c1e;
