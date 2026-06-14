@@ -260,7 +260,7 @@ a:hover { color: var(--accent-hover); }
 }
 
 /* ── Sections (shared) ── */
-section { padding: 120px 0; }
+section { padding: 120px 0; scroll-margin-top: calc(var(--nav-height) + 20px); }
 
 .section-container {
     max-width: 1080px;
@@ -417,6 +417,37 @@ section { padding: 120px 0; }
     left: 0;
     color: var(--accent);
     font-weight: 700;
+}
+
+.project-challenge {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.015);
+    border-left: 3px solid var(--accent-purple);
+    border-radius: 4px var(--radius) var(--radius) 4px;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    border-right: 1px solid rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.project-challenge h5 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.project-challenge p {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
 }
 
 .project-badges {
@@ -747,10 +778,24 @@ section { padding: 120px 0; }
 
 .skill-bar { display: flex; flex-direction: column; gap: 6px; }
 
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
 .skill-name {
     font-size: 0.82rem;
     font-weight: 600;
     color: var(--text-secondary);
+}
+
+.skill-desc {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 500;
 }
 
 .bar {

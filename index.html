@@ -99,6 +99,10 @@
                         <li data-en="Docker Compose (FastAPI + PostgreSQL)" data-ua="Docker Compose (FastAPI + PostgreSQL)">Docker Compose (FastAPI + PostgreSQL)</li>
                         <li data-en="Google Compute Engine + Cloud Logging" data-ua="Google Compute Engine + Cloud Logging">Google Compute Engine + Cloud Logging</li>
                     </ul>
+                    <div class="project-challenge">
+                        <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️ Under the Hood & Challenge</h5>
+                        <p data-en="Handled high-throughput parallel webhooks by offloading CPU-intensive JSON verification and LLM processing, implementing Tenacity-based custom exponential backoffs to handle downstream API rate limits elegantly without dropping leads." data-ua="Обробка високонавантажених паралельних вебхуків через винесення ресурсномісткої JSON-валідації та ШІ-обробки, а також впровадження Tenacity-бек-офів для елегантного запобігання перевищення лімітів сторонніх API.">Handled high-throughput parallel webhooks by offloading CPU-intensive JSON verification and LLM processing, implementing Tenacity-based custom exponential backoffs to handle downstream API rate limits elegantly without dropping leads.</p>
+                    </div>
                     <div class="project-badges">
                         <span>FastAPI</span><span>Pydantic</span><span>Tenacity</span><span>Docker</span><span>GCP</span><span>PostgreSQL</span>
                     </div>
@@ -121,6 +125,10 @@
                             <li data-en="Async worker layer: BS4 + HTTPX scrapers" data-ua="Асинхронний робочий шар: BS4 + HTTPX скрейпери">Async worker layer: BS4 + HTTPX scrapers</li>
                             <li data-en="FastAPI WebSockets — live progress streaming" data-ua="FastAPI WebSockets — стрімінг прогресу в реальному часі">FastAPI WebSockets — live progress streaming</li>
                         </ul>
+                        <div class="project-challenge">
+                            <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️ Under the Hood & Challenge</h5>
+                            <p data-en="Scraped business contact data dynamically from Google Maps without getting rate-limited or blocked by anti-bot systems. Implemented an asynchronous background thread pool that streams progress live via a unified WebSocket connection, allowing instant updates and cancellation controls." data-ua="Динамічний збір контактів бізнесів із Google Maps без блокування антибот-системами. Реалізовано асинхронний пул фонових воркерів, які транслюють прогрес та дозволяють скасувати завдання в реальному часі через єдине WebSocket-з'єднання.">Scraped business contact data dynamically from Google Maps without getting rate-limited or blocked by anti-bot systems. Implemented an asynchronous background thread pool that streams progress live via a unified WebSocket connection, allowing instant updates and cancellation controls.</p>
+                        </div>
                         <div class="project-badges">
                             <span>Playwright</span><span>WebSockets</span><span>BS4</span><span>SQLite</span><span>Tailwind CSS</span>
                         </div>
@@ -190,6 +198,10 @@
                             <li data-en="Google Gemini for structured summarization with key points" data-ua="Google Gemini для структурованої сумаризації з ключовими тезами">Google Gemini for structured summarization with key points</li>
                             <li data-en="Async architecture with Aiogram 3 for responsive UX" data-ua="Асинхронна архітектура на Aiogram 3 для швидкого відгуку">Async architecture with Aiogram 3 for responsive UX</li>
                         </ul>
+                        <div class="project-challenge">
+                            <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️ Under the Hood & Challenge</h5>
+                            <p data-en="Transcribed large audio files exceeding API payload limits. Engineered a dynamic chunking pipeline using PyDub that splits audio on silence, processes transcription chunks concurrently via a task gather pipeline, and combines snippets before feeding to Gemini for structured extraction." data-ua="Транскрибування великих аудіофайлів, що перевищують ліміти API. Створено конвеєр динамічного нарізання аудіо за допомогою PyDub (з урахуванням пауз), паралельної обробки фрагментів та подальшого комбінування тексту перед надсиланням у Gemini для структурування.">Transcribed large audio files exceeding API payload limits. Engineered a dynamic chunking pipeline using PyDub that splits audio on silence, processes transcription chunks concurrently via a task gather pipeline, and combines snippets before feeding to Gemini for structured extraction.</p>
+                        </div>
                         <div class="project-badges">
                             <span>Aiogram 3</span><span>Groq Whisper</span><span>Gemini</span><span>PyDub</span><span>asyncio</span>
                         </div>
@@ -252,6 +264,10 @@
                             <li data-en="LLM agents for intelligent summarization and categorization" data-ua="LLM-агенти для інтелектуальної сумаризації та категоризації">LLM agents for intelligent summarization and categorization</li>
                             <li data-en="Custom MCP (Model Context Protocol) integration" data-ua="Кастомна інтеграція MCP (Model Context Protocol)">Custom MCP (Model Context Protocol) integration</li>
                         </ul>
+                        <div class="project-challenge">
+                            <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️ Under the Hood & Challenge</h5>
+                            <p data-en="Connected a CLI LLM agent with real-time web state. Developed a custom Python-based MCP server that exposes local browser APIs to the LLM agent, allowing it to autonomously search, fetch, scrape, and summarize morning headlines directly in the terminal workspace." data-ua="Інтеграція LLM-агента CLI в реальному часі з веб-даними. Розроблено кастомний Python MCP-сервер, який надає агенту доступ до API браузера для повністю автономного пошуку, збору та сумаризації новин прямо у робочому терміналі.">Connected a CLI LLM agent with real-time web state. Developed a custom Python-based MCP server that exposes local browser APIs to the LLM agent, allowing it to autonomously search, fetch, scrape, and summarize morning headlines directly in the terminal workspace.</p>
+                        </div>
                         <div class="project-badges">
                             <span>Playwright</span><span>LLM Agents</span><span>MCP</span><span>Python</span><span>Scheduler</span>
                         </div>
@@ -286,42 +302,138 @@
                 <div class="skill-group">
                     <h4 data-en="Languages & Frameworks" data-ua="Мови та фреймворки">Languages & Frameworks</h4>
                     <div class="skill-bars">
-                        <div class="skill-bar" data-level="95"><span class="skill-name">Python</span><div class="bar"><div class="bar-fill"></div></div></div>
-                        <div class="skill-bar" data-level="90"><span class="skill-name">FastAPI</span><div class="bar"><div class="bar-fill"></div></div></div>
-                        <div class="skill-bar" data-level="85"><span class="skill-name">Pydantic</span><div class="bar"><div class="bar-fill"></div></div></div>
-                        <div class="skill-bar" data-level="80"><span class="skill-name">SQLAlchemy</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="95">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-desc">Asyncio, OOP patterns, Decorators, Metaclasses</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-level="90">
+                            <div class="skill-info">
+                                <span class="skill-name">FastAPI</span>
+                                <span class="skill-desc">Dependency Injection, Middlewares, Background Tasks</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Pydantic</span>
+                                <span class="skill-desc">Data validation, Settings management, Custom validators</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-level="80">
+                            <div class="skill-info">
+                                <span class="skill-name">SQLAlchemy</span>
+                                <span class="skill-desc">Async sessions, Relationships, Declarative mapping</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-group">
                     <h4 data-en="Automation & Scraping" data-ua="Автоматизація та скрапінг">Automation & Scraping</h4>
                     <div class="skill-bars">
-                        <div class="skill-bar" data-level="90"><span class="skill-name">Playwright</span><div class="bar"><div class="bar-fill"></div></div></div>
-                        <div class="skill-bar" data-level="85"><span class="skill-name">BeautifulSoup4</span><div class="bar"><div class="bar-fill"></div></div></div>
-                        <div class="skill-bar" data-level="88"><span class="skill-name">HTTPX / asyncio</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="90">
+                            <div class="skill-info">
+                                <span class="skill-name">Playwright</span>
+                                <span class="skill-desc">Headless automation, Scraping, Request interception</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">BeautifulSoup4</span>
+                                <span class="skill-desc">HTML parsing, CSS selectors, Data extraction</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-level="88">
+                            <div class="skill-info">
+                                <span class="skill-name">HTTPX / asyncio</span>
+                                <span class="skill-desc">Async requests, Concurrency, Rate limiting</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-group">
                     <h4 data-en="Databases & Queues" data-ua="Бази даних та черги">Databases & Queues</h4>
                     <div class="skill-bars">
-                        <div class="skill-bar" data-level="85"><span class="skill-name">PostgreSQL</span><div class="bar"><div class="bar-fill"></div></div></div>
-                        <div class="skill-bar" data-level="80"><span class="skill-name">SQLite</span><div class="bar"><div class="bar-fill"></div></div></div>
-                        <div class="skill-bar" data-level="70"><span class="skill-name">Redis / Celery</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-desc">Async pg drivers, Indexing, Complex queries</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-level="80">
+                            <div class="skill-info">
+                                <span class="skill-name">SQLite</span>
+                                <span class="skill-desc">Local DB storage, Write-Ahead Logging (WAL) mode</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-level="70">
+                            <div class="skill-info">
+                                <span class="skill-name">Redis / Celery</span>
+                                <span class="skill-desc">Message brokers, Distributed task queues, Task retries</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-group">
                     <h4 data-en="DevOps & Cloud" data-ua="DevOps та хмари">DevOps & Cloud</h4>
                     <div class="skill-bars">
-                        <div class="skill-bar" data-level="85"><span class="skill-name">Docker / Compose</span><div class="bar"><div class="bar-fill"></div></div></div>
-                        <div class="skill-bar" data-level="75"><span class="skill-name">GCP / GCE</span><div class="bar"><div class="bar-fill"></div></div></div>
-                        <div class="skill-bar" data-level="80"><span class="skill-name">Git / GitHub</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker / Compose</span>
+                                <span class="skill-desc">Multi-stage builds, non-root user, multi-service setup</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-level="75">
+                            <div class="skill-info">
+                                <span class="skill-name">GCP / GCE</span>
+                                <span class="skill-desc">VM deployment, Google Cloud Logging, firewall rules</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-level="80">
+                            <div class="skill-info">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-desc">Branching models, Git Actions pipelines, PR workflows</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-group">
                     <h4 data-en="AI & API Integrations" data-ua="AI та API інтеграції">AI & API Integrations</h4>
                     <div class="skill-bars">
-                        <div class="skill-bar" data-level="88"><span class="skill-name">OpenAI API</span><div class="bar"><div class="bar-fill"></div></div></div>
-                        <div class="skill-bar" data-level="85"><span class="skill-name">Google Gemini</span><div class="bar"><div class="bar-fill"></div></div></div>
-                        <div class="skill-bar" data-level="80"><span class="skill-name">Groq / Llama</span><div class="bar"><div class="bar-fill"></div></div></div>
+                        <div class="skill-bar" data-level="88">
+                            <div class="skill-info">
+                                <span class="skill-name">OpenAI API</span>
+                                <span class="skill-desc">Structured Outputs, Assistants API, context caching</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Google Gemini</span>
+                                <span class="skill-desc">Large contexts, Prompting, multimodal parsing</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-level="80">
+                            <div class="skill-info">
+                                <span class="skill-name">Groq / Llama</span>
+                                <span class="skill-desc">JSON Mode, high-throughput inference, open weights</span>
+                            </div>
+                            <div class="bar"><div class="bar-fill"></div></div>
+                        </div>
                     </div>
                 </div>
             </div>
