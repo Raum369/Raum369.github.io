@@ -196,15 +196,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const commandsEN = {
         help: 'Available commands:\n  help     - Show this help menu\n  run      - Start scraping simulation demo\n  projects - List all key projects\n  about    - Show info about Vladyslav\n  clear    - Clear terminal screen',
-        about: 'Vladyslav Manko\nRole: Python & AI Automation Engineer\nExperience: 1+ Year in building backend APIs & scrapers\nTech Stack: Python, FastAPI, Playwright, Docker, GCP, OpenAI/Gemini',
-        projects: '1. Lead Processing Service (FastAPI, GCP, Docker)\n2. Lead Console (Playwright, Scraper, WebSockets)\n3. AI Audio Summarizer Bot (Telegram, LLM integration)\n4. Claude Code News Digest (Cron CLI script, Daily 9:00 AM)',
+        about: 'Vladyslav Manko\nRole: AI Automation Architect\nExperience: 1+ Year in building backend APIs & scrapers\nTech Stack: Python, FastAPI, Playwright, Docker, GCP, OpenAI/Gemini',
+        projects: '1. Logistics TMS & Telemetry Dashboard (JavaScript, Leaflet.js, Chart.js)\n2. Lead Console — Real-Time Lead Finder (Playwright, Scraper, WebSockets)\n3. Claude Code News Digest (Cron CLI script, Daily 9:00 AM)\n4. AI Audio Summarizer Bot (Telegram, LLM integration)\n5. Lead Processing Service (FastAPI, GCP, Docker)',
         error: 'Command not found: "$CMD". Type "help" to view available commands.'
     };
 
     const commandsUA = {
         help: 'Доступні команди:\n  help     - Показати це меню допомоги\n  run      - Запустити демо симуляції скрапінгу\n  projects - Список усіх ключових проєктів\n  about    - Інформація про Владислава\n  clear    - Очистити екран термінала',
-        about: 'Владислав Манько\nСпеціалізація: Python & AI Automation Engineer\nДосвід: 1+ рік розробки backend API та скраперів\nСтек: Python, FastAPI, Playwright, Docker, GCP, OpenAI/Gemini',
-        projects: '1. Lead Processing Service (FastAPI, GCP, Docker)\n2. Lead Console (Playwright, Scraper, WebSockets)\n3. AI Audio Summarizer Bot (Telegram, інтеграція LLM)\n4. Claude Code News Digest (Cron CLI скрипт, щодня о 9:00)',
+        about: 'Владислав Манько\nСпеціалізація: AI Automation Architect\nДосвід: 1+ рік розробки backend API та скраперів\nСтек: Python, FastAPI, Playwright, Docker, GCP, OpenAI/Gemini',
+        projects: '1. Дашборд TMS та Телеметрії (JavaScript, Leaflet.js, Chart.js)\n2. Lead Console — Пошук лідів у реальному часі (Playwright, Scraper, WebSockets)\n3. Claude Code News Digest (Cron CLI скрипт, щодня о 9:00)\n4. AI Audio Summarizer Bot (Telegram, інтеграція LLM)\n5. Lead Processing Service (FastAPI, GCP, Docker)',
         error: 'Команду "$CMD" не знайдено. Введіть "help" для перегляду списку команд.'
     };
 
