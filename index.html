@@ -150,42 +150,17 @@
                     </div>
                 </div>
                 <div class="project-visual">
-                    <div class="project-tabs">
-                        <button class="tab-btn active" data-tab="tms-analytics" data-en="Fleet Analytics"
-                            data-ua="Аналітика флоту">Fleet Analytics</button>
-                        <button class="tab-btn" data-tab="tms-map" data-en="Live Tracking"
-                            data-ua="Відстеження на карті">Live Tracking</button>
-                    </div>
-
-                    <div class="tab-content" data-tab-content="tms-analytics">
-                        <div class="window-mockup">
-                            <div class="window-header">
-                                <div class="window-dots">
-                                    <span class="dot dot-red"></span>
-                                    <span class="dot dot-yellow"></span>
-                                    <span class="dot dot-green"></span>
-                                </div>
-                                <span class="window-title">tms-dashboard — analytics</span>
+                    <div class="window-mockup">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
                             </div>
-                            <div class="window-body">
-                                <img src="assets/tms-dashboard.png" alt="Logistics TMS Analytics" class="window-image">
-                            </div>
+                            <span class="window-title">tms-dashboard — telemetry</span>
                         </div>
-                    </div>
-
-                    <div class="tab-content hidden" data-tab-content="tms-map">
-                        <div class="window-mockup">
-                            <div class="window-header">
-                                <div class="window-dots">
-                                    <span class="dot dot-red"></span>
-                                    <span class="dot dot-yellow"></span>
-                                    <span class="dot dot-green"></span>
-                                </div>
-                                <span class="window-title">tms-dashboard — tracking</span>
-                            </div>
-                            <div class="window-body">
-                                <img src="assets/tms-map.png" alt="Logistics TMS Map Tracking" class="window-image">
-                            </div>
+                        <div class="window-body">
+                            <img src="assets/TMS-Logistics.png" alt="Logistics TMS & Telemetry Dashboard" class="window-image">
                         </div>
                     </div>
                 </div>
@@ -295,52 +270,44 @@
                 </div>
             </article>
 
-            <!-- PROJECT 3: News Digest Tool -->
+            <!-- PROJECT 3: Raum AI News -->
             <article class="project-card reveal has-visual" id="project-news-digest">
                 <div class="project-details">
                     <div class="project-header">
-                        <span class="project-tag">CLI Tool / AI</span>
-                        <h3 class="project-title" data-en="Claude Code News Digest"
-                            data-ua="Claude Code Дайджест Новин">Claude Code News Digest</h3>
-                        <p class="project-stack">Python · Playwright · LLM Agents</p>
+                        <span class="project-tag">Telegram Channel / AI</span>
+                        <h3 class="project-title" data-en="Raum AI News" data-ua="Raum AI News">Raum AI News</h3>
+                        <p class="project-stack">Python · Telethon · Gemini API · SQLite · APScheduler</p>
                     </div>
                     <div class="project-body">
                         <p class="project-desc"
-                            data-en="Intelligent automation system that gathers industry intelligence from multiple global sources daily. Uses AI summarizing agents to compile structured, context-rich briefings, delivered directly into developer or executive environments via custom integrations."
-                            data-ua="Інтелектуальна система автоматизації, яка щодня збирає новини та інсайти з багатьох глобальних джерел. Використовує AI-агентів для формування структурованих звітів, які доставляються безпосередньо в середовище розробника чи керівника.">
-                            Intelligent automation system that gathers industry intelligence from multiple global
-                            sources daily. Uses AI summarizing agents to compile structured, context-rich briefings,
-                            delivered directly into developer or executive environments via custom integrations.</p>
+                            data-en="Autonomous AI news channel publisher. Polls global RSS feeds, evaluates and ranks articles by importance using LLM agents, and formats & publishes the highest-scoring news directly to the Telegram channel."
+                            data-ua="Автономний видавець новинного ШІ-каналу. Збирає глобальні RSS-стрічки, оцінює та ранжує статті за важливістю за допомогою LLM-агентів, форматує та публікує найцінніші новини безпосередньо в Telegram-канал.">
+                            Autonomous AI news channel publisher. Polls global RSS feeds, evaluates and ranks articles by importance using LLM agents, and formats & publishes the highest-scoring news directly to the Telegram channel.</p>
                         <ul class="project-features">
-                            <li data-en="Scheduled ingestion pipeline delivering tailored intelligence briefs daily at 9:00 AM"
-                                data-ua="Запланований конвеєр збору даних, що надає персоналізовані аналітичні звіти щоранку о 9:00">
-                                Scheduled ingestion pipeline delivering tailored intelligence briefs daily at 9:00 AM
-                            </li>
-                            <li data-en="Multi-source data ingestion engine fetching and processing raw web articles in parallel"
-                                data-ua="Модуль паралельного збору даних з багатьох джерел для обробки веб-публікацій">
-                                Multi-source data ingestion engine fetching and processing raw web articles in parallel
-                            </li>
-                            <li data-en="LLM orchestration layer synthesizing key trends, action items, and topic tags"
-                                data-ua="Рівень оркестрації LLM для виділення ключових трендів, завдань та тематичних тегів">
-                                LLM orchestration layer synthesizing key trends, action items, and topic tags</li>
-                            <li data-en="Enterprise MCP integration allowing AI agents to query the local intelligence knowledge base"
-                                data-ua="Інтеграція Enterprise MCP, що дозволяє AI-агентам робити запити до локальної бази знань">
-                                Enterprise MCP integration allowing AI agents to query the local intelligence knowledge
-                                base</li>
+                            <li data-en="Automated RSS parser polling multi-source tech feeds in parallel"
+                                data-ua="Автоматичний RSS-парсер, що паралельно опитує технологічні джерела">
+                                Automated RSS parser polling multi-source tech feeds in parallel</li>
+                            <li data-en="LLM importance-scoring engine filtering out duplicates and noise"
+                                data-ua="Модуль оцінки важливості новин на базі LLM для фільтрації шуму й дублікатів">
+                                LLM importance-scoring engine filtering out duplicates and noise</li>
+                            <li data-en="Content enhancement layer summarizing key facts and adding media assets"
+                                data-ua="Збагачення контенту: стисле резюме фактів та додавання медіа-ресурсів">
+                                Content enhancement layer summarizing key facts and adding media assets</li>
+                            <li data-en="High-quality channel publisher using Telethon & Telegram API"
+                                data-ua="Публікація в канал з високою якістю оформлення через Telethon & Telegram API">
+                                High-quality channel publisher using Telethon & Telegram API</li>
                         </ul>
                         <div class="project-challenge">
                             <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️
                                 Under the Hood & Challenge</h5>
-                            <p data-en="Designed a custom Python-based Model Context Protocol (MCP) server that safely bridge AI agents with external web systems. Implemented secure asynchronous execution loops for daily reporting while optimizing LLM token context usage through smart content extraction and preprocessing."
-                                data-ua="Розроблено кастомний сервер Model Context Protocol (MCP) на Python, який безпечно поєднує AI-агентів із зовнішніми веб-системами. Реалізовано асинхронні цикли виконання для щоденних звітів з оптимізацією токенів LLM.">
-                                Designed a custom Python-based Model Context Protocol (MCP) server that safely bridge AI
-                                agents with external web systems. Implemented secure asynchronous execution loops for
-                                daily reporting while optimizing LLM token context usage through smart content
-                                extraction and preprocessing.</p>
+                            <p data-en="Designed a custom ranking mechanism that filters out low-value articles using strict JSON schema evaluations. Handled parallel polling limits with polite delay queues, and configured safe execution loops with APScheduler."
+                                data-ua="Розроблено кастомний механізм ранжування для фільтрації малоінформативних статей через сувору валідацію схем JSON. Оброблено ліміти запитів за допомогою черг затримок та налаштовано стійкі цикли виконання з APScheduler.">
+                                Designed a custom ranking mechanism that filters out low-value articles using strict JSON
+                                schema evaluations. Handled parallel polling limits with polite delay queues, and
+                                configured safe execution loops with APScheduler.</p>
                         </div>
                         <div class="project-badges">
-                            <span>Playwright</span><span>LLM
-                                Agents</span><span>MCP</span><span>Python</span><span>Scheduler</span>
+                            <span>Python</span><span>Telethon</span><span>Gemini API</span><span>SQLite</span><span>APScheduler</span>
                         </div>
                         <a href="https://github.com/Raum369" target="_blank" class="project-link"
                             data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
@@ -354,151 +321,130 @@
                                 <span class="dot dot-yellow"></span>
                                 <span class="dot dot-green"></span>
                             </div>
-                            <span class="window-title">news-digest — daily report</span>
+                            <span class="window-title">raum-ai-news — telegram-channel</span>
                         </div>
                         <div class="window-body">
-                            <img src="assets/news-digest.png" alt="Claude Code News Digest CLI" class="window-image">
+                            <img src="assets/telegram-chanel.png" alt="Raum AI News Telegram Channel" class="window-image">
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- PROJECT 4: AI Audio Summarizer Bot -->
+            <!-- PROJECT 4: Raum Voice Butler -->
             <article class="project-card reveal has-visual" id="project-audio-bot">
                 <div class="project-details">
                     <div class="project-header">
                         <span class="project-tag">Telegram Bot / AI</span>
-                        <h3 class="project-title" data-en="AI Audio Summarizer Bot" data-ua="AI Бот-Сумаризатор Аудіо">
-                            AI Audio Summarizer Bot</h3>
-                        <p class="project-stack">Python · Aiogram 3 · Groq Whisper · Gemini</p>
+                        <h3 class="project-title" data-en="Raum Voice Butler" data-ua="Raum Voice Butler">Raum Voice Butler</h3>
+                        <p class="project-stack">Python · Aiogram 3 · Groq Whisper · Llama 3.3</p>
                     </div>
                     <div class="project-body">
                         <p class="project-desc"
-                            data-en="AI-powered audio intelligence system deployed as a Telegram bot. It automatically transcribes lengthy client calls, meetings, or voice memos, and generates structured, action-oriented executive summaries, drastically reducing time-to-decision."
-                            data-ua="Інтелектуальна система обробки аудіо на базі штучного інтелекту, розгорнута як Telegram-бот. Автоматично транскрибує тривалі дзвінки, зустрічі чи голосові нотатки та генерує структуровані резюме, суттєво заощаджуючи час.">
-                            AI-powered audio intelligence system deployed as a Telegram bot. It automatically
-                            transcribes lengthy client calls, meetings, or voice memos, and generates structured,
-                            action-oriented executive summaries, drastically reducing time-to-decision.</p>
+                            data-en="An intelligent asynchronous Telegram Bot that processes voice messages, transcribes speech using Groq Whisper, extracts task semantics using Groq Llama 3.3, and logs tasks to Google Sheets."
+                            data-ua="Інтелектуальний асинхронний Telegram-бот, який обробляє голосові повідомлення, розпізнає мову через Groq Whisper, структурує завдання через Groq Llama 3.3 та записує їх у Google Sheets.">
+                            An intelligent asynchronous Telegram Bot that processes voice messages, transcribes speech using Groq Whisper, extracts task semantics using Groq Llama 3.3, and logs tasks to Google Sheets.</p>
                         <ul class="project-features">
-                            <li data-en="Dynamic multi-part audio chunking optimized for massive files exceeding API limits"
-                                data-ua="Динамічне багатокомпонентне нарізання аудіо, оптимізоване для файлів великої тривалості">
-                                Dynamic multi-part audio chunking optimized for massive files exceeding API limits</li>
-                            <li data-en="Ultra-low latency transcription using Groq Whisper model deployment"
-                                data-ua="Транскрибування з наднизькою затримкою за допомогою швидких моделей Groq Whisper">
-                                Ultra-low latency transcription using Groq Whisper model deployment</li>
-                            <li data-en="Automated prompt pipelines in Google Gemini for key takeaways, task extraction, and action items"
-                                data-ua="Автоматичні конвеєри в Google Gemini для виділення завдань та головних тез">
-                                Automated prompt pipelines in Google Gemini for key takeaways, task extraction, and
-                                action items</li>
-                            <li data-en="High-concurrency async bot engine utilizing Aiogram 3 for immediate user response"
-                                data-ua="Висококонкурентний асинхронний бот на Aiogram 3 для миттєвої відповіді користувачам">
-                                High-concurrency async bot engine utilizing Aiogram 3 for immediate user response</li>
+                            <li data-en="Voice note transcription (.ogg) using Groq Whisper-large-v3"
+                                data-ua="Розпізнавання голосових нотаток (.ogg) через Groq Whisper-large-v3">
+                                Voice note transcription (.ogg) using Groq Whisper-large-v3</li>
+                            <li data-en="Semantic extraction of task summary, details, priority, and category via Llama 3.3"
+                                data-ua="Семантичний аналіз тексту: суть завдання, опис, категорія та пріоритет через Llama 3.3">
+                                Semantic extraction of task summary, details, priority, and category via Llama 3.3</li>
+                            <li data-en="Smart relative date calculation (e.g., 'tomorrow evening') from text"
+                                data-ua="Розумне обчислення дедлайнів на основі відносних часових виразів">
+                                Smart relative date calculation (e.g., 'tomorrow evening') from text</li>
+                            <li data-en="Hybrid storage with Google Sheets API and local CSV fallback"
+                                data-ua="Гібридне збереження даних у Google-таблиці з резервним копіюванням у локальний CSV">
+                                Hybrid storage with Google Sheets API and local CSV fallback</li>
                         </ul>
                         <div class="project-challenge">
                             <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️
                                 Under the Hood & Challenge</h5>
-                            <p data-en="Engineered an asynchronous map-reduce pipeline for large audio payloads. Audio tracks are segmented by silence using PyDub, transcribed concurrently via parallel worker queues, reassembled, and then fed through structured Pydantic models for validated summary generation."
-                                data-ua="Розроблено асинхронний конвеєр типу map-reduce для обробки великих аудіофайлів. Аудіодоріжки нарізаються з урахуванням тиші за допомогою PyDub, транскрибуються паралельно через черги воркерів та структуруються через Pydantic-моделі.">
-                                Engineered an asynchronous map-reduce pipeline for large audio payloads. Audio tracks
-                                are segmented by silence using PyDub, transcribed concurrently via parallel worker
-                                queues, reassembled, and then fed through structured Pydantic models for validated
-                                summary generation.</p>
+                            <p data-en="Built a multi-stage audio segmenter using PyDub to process massive audio uploads. Implemented structured Pydantic data extraction and a resilient hybrid storage adapter that guarantees data survival during API downtime."
+                                data-ua="Створено багатошаровий сегментатор аудіо на PyDub для великих файлів. Впроваджено структурований вивід даних через Pydantic та надійний гібридний адаптер збереження для захисту даних у разі збоїв API.">
+                                Built a multi-stage audio segmenter using PyDub to process massive audio uploads.
+                                Implemented structured Pydantic data extraction and a resilient hybrid storage adapter
+                                that guarantees data survival during API downtime.</p>
                         </div>
                         <div class="project-badges">
-                            <span>Aiogram 3</span><span>Groq
-                                Whisper</span><span>Gemini</span><span>PyDub</span><span>asyncio</span>
+                            <span>Aiogram 3</span><span>Groq Whisper</span><span>Llama 3.3</span><span>Google Sheets API</span><span>PyDub</span>
                         </div>
                         <a href="https://github.com/Raum369" target="_blank" class="project-link"
                             data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
                     </div>
                 </div>
                 <div class="project-visual">
-                    <div class="project-tabs">
-                        <button class="tab-btn active" data-tab="chat" data-en="Chat Interface"
-                            data-ua="Інтерфейс чату">Chat Interface</button>
-                        <button class="tab-btn" data-tab="summary" data-en="AI Summary" data-ua="Ші Саммарі">ШІ
-                            Саммарі</button>
-                    </div>
-
-                    <div class="tab-content" data-tab-content="chat">
-                        <div class="window-mockup">
-                            <div class="window-header">
-                                <div class="window-dots">
-                                    <span class="dot dot-red"></span>
-                                    <span class="dot dot-yellow"></span>
-                                    <span class="dot dot-green"></span>
-                                </div>
-                                <span class="window-title">telegram-bot — chat</span>
+                    <div class="window-mockup">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
                             </div>
-                            <div class="window-body">
-                                <img src="assets/audio-bot-1.png" alt="AI Audio Summarizer Telegram Bot Chat"
-                                    class="window-image">
-                            </div>
+                            <span class="window-title">raum-voice — assistant</span>
                         </div>
-                    </div>
-
-                    <div class="tab-content hidden" data-tab-content="summary">
-                        <div class="window-mockup">
-                            <div class="window-header">
-                                <div class="window-dots">
-                                    <span class="dot dot-red"></span>
-                                    <span class="dot dot-yellow"></span>
-                                    <span class="dot dot-green"></span>
-                                </div>
-                                <span class="window-title">telegram-bot — summary</span>
-                            </div>
-                            <div class="window-body">
-                                <img src="assets/audio-bot-2.png" alt="AI Audio Summarizer Telegram Bot Summary"
-                                    class="window-image">
-                            </div>
+                        <div class="window-body">
+                            <img src="assets/AI-audio-summarizer.png" alt="Raum Voice Butler App" class="window-image">
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- PROJECT 5: Lead Processing Service -->
-            <article class="project-card reveal" id="project-lead-processing">
-                <div class="project-header">
-                    <span class="project-tag">Backend / AI</span>
-                    <h3 class="project-title" data-en="Lead Processing Service" data-ua="Сервіс обробки лідів">Lead
-                        Processing Service</h3>
-                    <p class="project-stack">Python · FastAPI · Docker · GCP · OpenAI</p>
+            <!-- PROJECT 5: Raum Solfeggio Sanctuary -->
+            <article class="project-card reveal has-visual" id="project-solfeggio">
+                <div class="project-details">
+                    <div class="project-header">
+                        <span class="project-tag">Audio / UI-UX</span>
+                        <h3 class="project-title" data-en="Raum Solfeggio Sanctuary" data-ua="Raum Solfeggio Sanctuary">Raum Solfeggio Sanctuary</h3>
+                        <p class="project-stack">HTML5 · Vanilla CSS · Web Audio API · Canvas API</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc"
+                            data-en="A premium minimalist ambient sound synthesizer application. Generates pure Solfeggio frequencies and binaural beats in real time directly in the browser, featuring an Apple/Endel-inspired design."
+                            data-ua="Преміальний мінімалістичний синтезатор фонових звуків. Генерує частоти Сольфеджіо та бінауральні ритми в реальному часі безпосередньо в браузері з преміальним дизайном у стилі Apple / Endel.">
+                            A premium minimalist ambient sound synthesizer application. Generates pure Solfeggio frequencies and binaural beats in real time directly in the browser, featuring an Apple/Endel-inspired design.</p>
+                        <ul class="project-features">
+                            <li data-en="Real-time sound synthesis using Web Audio API (Drone Pad + 4 Harmonics + Sub-Bass)"
+                                data-ua="Генерація звуку в реальному часі через Web Audio API (основа + 4 гармоніки + суб-бас)">
+                                Real-time sound synthesis using Web Audio API (Drone Pad + 4 Harmonics + Sub-Bass)</li>
+                            <li data-en="Stereo Filtered Wind Noise modulated by slow LFOs imitating deep breathing"
+                                data-ua="Стерео-шум вітру та хвиль, що плавно модулюється LFO для імітації дихання океану">
+                                Stereo Filtered Wind Noise modulated by slow LFOs imitating deep breathing</li>
+                            <li data-en="Binaural beats generation (Delta, Theta, Alpha, Beta, Gamma brain waves)"
+                                data-ua="Стимуляція мозкової активності бінауральними хвилями (Delta, Theta, Alpha, Beta, Gamma)">
+                                Binaural beats generation (Delta, Theta, Alpha, Beta, Gamma brain waves)</li>
+                            <li data-en="Interactive constellation Canvas animation and fluid morphing bubble responding to audio"
+                                data-ua="Інтерактивна Canvas-анімація сузір'їв та аморфна сфера, що вібрує в такт музиці">
+                                Interactive constellation Canvas animation and fluid morphing bubble responding to audio</li>
+                        </ul>
+                        <div class="project-challenge">
+                            <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️ Under
+                                the Hood & Challenge</h5>
+                            <p data-en="Designed a custom zero-latency audio engine utilizing AudioNode pipelines. Engineered a 64-channel low-pass smoothing filter to map real-time audio analysis into fluid organic canvas deformations. Implemented Zero UI mode that fades out controls for deep focus."
+                                data-ua="Спроектовано звуковий двигун із нульовою затримкою на вузлах Web Audio API. Розроблено 64-канальний фільтр низьких частот для плавного відображення амплітуд на деформацію 3D-подібної Canvas-сфери. Додано Zero UI режим для фокусування.">
+                                Designed a custom zero-latency audio engine utilizing AudioNode pipelines. Engineered a 64-channel low-pass smoothing filter to map real-time audio analysis into fluid organic canvas deformations. Implemented Zero UI mode that fades out controls for deep focus.</p>
+                        </div>
+                        <div class="project-badges">
+                            <span>Web Audio API</span><span>HTML5 Canvas</span><span>Vanilla JS</span><span>CSS Animations</span><span>Zero UI</span>
+                        </div>
+                        <a href="https://github.com/Raum369" target="_blank" class="project-link" data-en="View on GitHub →"
+                            data-ua="Переглянути на GitHub →">View on GitHub →</a>
+                    </div>
                 </div>
-                <div class="project-body">
-                    <p class="project-desc"
-                        data-en="High-throughput asynchronous lead qualification and processing pipeline. Ingests, validates, and enriched incoming B2B sales leads in real time, leveraging OpenAI Structured Outputs for categorization before sync with CRM systems."
-                        data-ua="Високонавантажений асинхронний конвеєр кваліфікації та обробки лідів. Приймає, валідує та збагачує B2B-ліди в реальному часі, використовуючи структурований вивід OpenAI для автоматичної синхронізації з CRM.">
-                        High-throughput asynchronous lead qualification and processing pipeline. Ingests, validates, and
-                        enriched incoming B2B sales leads in real time, leveraging OpenAI Structured Outputs for
-                        categorization before sync with CRM systems.</p>
-                    <ul class="project-features">
-                        <li data-en="Secure enterprise ingestion endpoints using HMAC-SHA256 signature verification"
-                            data-ua="Безпечні корпоративні ендпоінти для прийому даних із верифікацією підписів HMAC-SHA256">
-                            Secure enterprise ingestion endpoints using HMAC-SHA256 signature verification</li>
-                        <li data-en="Fault-tolerant integration layer using Tenacity to ensure zero lead loss during spikes"
-                            data-ua="Зовнішні інтеграції з Tenacity-бек-офом для запобігання втраті лідів під час сплесків трафіку">
-                            Fault-tolerant integration layer using Tenacity to ensure zero lead loss during spikes</li>
-                        <li data-en="Containerized production architecture using Docker Compose for isolated microservices"
-                            data-ua="Контейнеризована архітектура на Docker Compose для ізольованого запуску мікросервісів">
-                            Containerized production architecture using Docker Compose for isolated microservices</li>
-                        <li data-en="Cloud deployment on GCP using Google Cloud Logging for real-time observability"
-                            data-ua="Хмарне розгортання в GCP із Google Cloud Logging для моніторингу працездатності в реальному часі">
-                            Cloud deployment on GCP using Google Cloud Logging for real-time observability</li>
-                    </ul>
-                    <div class="project-challenge">
-                        <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️ Under
-                            the Hood & Challenge</h5>
-                        <p data-en="Built a resilient webhook consumer that handles bursty web traffic elegantly. Offloaded CPU-heavy JSON schema validations and external LLM api calls using asynchronous design patterns, and built auto-retrying CRM connectors with exponential backoff curves."
-                            data-ua="Розроблено стійкий обробник вебхуків для великих сплесків трафіку. Асинхронно розділено процеси важкої валідації схем та запитів до LLM API, а також впроваджено конектори до CRM із автоповторами.">
-                            Built a resilient webhook consumer that handles bursty web traffic elegantly. Offloaded
-                            CPU-heavy JSON schema validations and external LLM api calls using asynchronous design
-                            patterns, and built auto-retrying CRM connectors with exponential backoff curves.</p>
+                <div class="project-visual">
+                    <div class="window-mockup">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="window-title">raum-solfeggio — soundscape</span>
+                        </div>
+                        <div class="window-body">
+                            <img src="assets/raum-solfeggio.png" alt="Raum Solfeggio Sanctuary soundscape" class="window-image">
+                        </div>
                     </div>
-                    <div class="project-badges">
-                        <span>FastAPI</span><span>Pydantic</span><span>Tenacity</span><span>Docker</span><span>GCP</span><span>PostgreSQL</span>
-                    </div>
-                    <a href="https://github.com/Raum369" target="_blank" class="project-link" data-en="View on GitHub →"
-                        data-ua="Переглянути на GitHub →">View on GitHub →</a>
                 </div>
             </article>
 
