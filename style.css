@@ -701,6 +701,19 @@ section {
     transform: scale(1.03);
 }
 
+/* Portrait orientation mockup overrides (for mobile screenshots) */
+.window-mockup.is-portrait {
+    max-width: 280px; /* Make the container narrower to fit portrait aspect ratio without taking too much height */
+}
+
+.window-mockup.is-portrait .window-body {
+    aspect-ratio: 853 / 1844; /* Match the exact aspect ratio of the raum-solfeggio.png image */
+}
+
+.window-mockup.is-portrait .window-image {
+    object-fit: contain; /* Ensure the image is fully shown and not cropped */
+}
+
 @media (min-width: 900px) {
     .project-card.has-visual {
         display: grid;
