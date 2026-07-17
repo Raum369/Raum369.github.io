@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update all translatable elements
         document.querySelectorAll('[data-en]').forEach(el => {
             const text = el.getAttribute(`data-${currentLang}`);
-            if (text) el.textContent = text;
+            if (text) el.innerHTML = text;
         });
     });
 
