@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vladyslav Manko — AI Automation Architect</title>
+    <title>Vladyslav Manko — AI Engineer</title>
     <meta name="description"
-        content="Portfolio of Vladyslav Manko — Python Backend & AI Automation Engineer. FastAPI, Docker, GCP, OpenAI, Playwright.">
+        content="Portfolio of Vladyslav Manko — AI Engineer. Python, FastAPI, Docker, GCP, OpenAI, Groq, Playwright.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
@@ -47,12 +47,11 @@
         <div class="hero-content reveal">
             <p class="hero-greeting" data-en="Hello, I'm" data-ua="Привіт, я">Hello, I'm</p>
             <h1 class="hero-name">Vladyslav Manko</h1>
-            <p class="hero-title" data-en="AI Automation Architect" data-ua="AI Automation Architect">AI Automation
-                Architect</p>
+            <p class="hero-title" data-en="AI Engineer" data-ua="AI Engineer">AI Engineer</p>
             <p class="hero-subtitle"
-                data-en="I automate the work that eats your time — so you can focus on what actually grows your business."
-                data-ua="Я автоматизую роботу, яка забирає ваш час — щоб ви могли зосередитися на тому, що дійсно розвиває ваш бізнес.">
-                I automate the work that eats your time — so you can focus on what actually grows your business.</p>
+                data-en="I build production AI systems — from LLM integration and prompt engineering to deployed, monitored solutions."
+                data-ua="Я створюю AI-системи для продакшену — від інтеграції LLM та промпт-інжинірингу до розгортання та моніторингу готових рішень.">
+                I build production AI systems — from LLM integration and prompt engineering to deployed, monitored solutions.</p>
             <div class="hero-cta">
                 <a href="#projects" class="btn-primary" data-en="View Projects" data-ua="Переглянути проєкти">View
                     Projects</a>
@@ -84,9 +83,8 @@
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
-                        <span class="stat-number" data-count="20">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label" data-en="Production Projects" data-ua="Продакшн проєктів">Production
-                            Projects</span>
+                        <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label" data-en="Delivered Projects" data-ua="Зданих проєктів">Delivered Projects</span>
                     </div>
                     <div class="stat-card">
                         <span class="stat-number" data-count="1">0</span><span class="stat-plus">+</span>
@@ -101,51 +99,30 @@
     <section id="projects">
         <div class="section-container">
             <h2 class="section-label reveal" data-en="Key Projects" data-ua="Ключові проєкти">Key Projects</h2>
-            <article class="project-card project-card--featured reveal has-visual" id="project-tms">
+            <!-- PROJECT 1: AI Audio Summarizer -->
+            <article class="project-card project-card--featured reveal has-visual" id="project-audio-summarizer">
                 <div class="project-details">
                     <div class="project-header">
-                        <span class="project-tag project-tag--accent">Logistics / IoT</span>
-                        <h3 class="project-title" data-en="Logistics TMS & Telemetry Dashboard"
-                            data-ua="Дашборд TMS та Телеметрії Логістики">Logistics TMS & Telemetry Dashboard</h3>
-                        <p class="project-stack">JavaScript · Leaflet.js · Chart.js · CSS Grid</p>
+                        <span class="project-tag project-tag--accent">LLM / Audio Processing</span>
+                        <h3 class="project-title" data-en="AI Audio Summarizer"
+                            data-ua="AI Audio Summarizer">AI Audio Summarizer</h3>
+                        <p class="project-stack">Python · Groq Whisper · Llama 3.3 · PyDub</p>
                     </div>
                     <div class="project-body">
-                        <p class="project-desc"
-                            data-en="Production-ready transport management system dashboard providing real-time fleet visibility, interactive vehicle telemetry, and freight dispatch operations. Developed to optimize route planning, monitor active truck telemetry, and automate carrier freight-bidding workflows."
-                            data-ua="Готова до виробничого використання система управління транспортом (TMS), що забезпечує видимість флоту в реальному часі, інтерактивну телеметрію та диспетчеризацію вантажних перевезень. Розроблена для оптимізації маршрутів, моніторингу активних вантажівок та автоматизації торгів на вантажі.">
-                            Production-ready transport management system dashboard providing real-time fleet visibility,
-                            interactive vehicle telemetry, and freight dispatch operations. Developed to optimize route
-                            planning, monitor active truck telemetry, and automate carrier freight-bidding workflows.
-                        </p>
-                        <ul class="project-features">
-                            <li data-en="Live Leaflet.js tracking with optimized truck routing, active ETA recalculation, and fleet overlays"
-                                data-ua="Карти Leaflet.js з відстеженням вантажівок, оптимізацією маршрутів та перерахунком часу прибуття (ETA)">
-                                Live Leaflet.js tracking with optimized truck routing, active ETA recalculation, and
-                                fleet overlays</li>
-                            <li data-en="Telemetry analysis dashboard built with Chart.js tracking fuel consumption, speed, and engine load metrics"
-                                data-ua="Дашборд телеметрії на Chart.js для контролю витрати палива, швидкості та навантаження двигуна">
-                                Telemetry analysis dashboard built with Chart.js tracking fuel consumption, speed, and
-                                engine load metrics</li>
-                            <li data-en="Automated freight bidding system with real-time update notifications and instant carrier dispatcher matching"
-                                data-ua="Автоматизована система торгів на вантажі з миттєвим зв'язком диспетчера та перевізника">
-                                Automated freight bidding system with real-time update notifications and instant carrier
-                                dispatcher matching</li>
-                        </ul>
-                        <div class="project-challenge">
-                            <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️
-                                Under the Hood & Challenge</h5>
-                            <p data-en="Architected a high-performance telemetry dashboard syncing live IoT sensor streams with geographic map layers. Optimized render performance for concurrent multi-axis chart updates and integrated low-latency mapping APIs with custom lightweight vector markers."
-                                data-ua="Архітектура високонавантаженого дашборду, що синхронізує потоки IoT-датчиків з географічними картами. Оптимізовано продуктивність рендерингу багатоосьових графіків та інтегровано карти з кастомними маркерними шарами.">
-                                Architected a high-performance telemetry dashboard syncing live IoT sensor streams with
-                                geographic map layers. Optimized render performance for concurrent multi-axis chart
-                                updates and integrated low-latency mapping APIs with custom lightweight vector markers.
-                            </p>
+                        <div class="project-desc">
+                            <p><strong>❓ PROBLEM:</strong><br>
+                                Processing lengthy customer calls and meeting recordings manually leads to lost information, human error, and massive time sinks for analytics teams.</p>
+                            <p><strong>🖌 SOLUTION:</strong><br>
+                                Developed a robust audio processing pipeline integrating Groq Whisper for fast transcription and Llama 3.3 for semantic summarization. Engineered a multi-stage chunking system using PyDub to handle massive files without memory leaks.</p>
+                            <p><strong>🎯 RESULTS:</strong><br>
+                                • 90% reduction in transcription time<br>
+                                • High-accuracy semantic extraction<br>
+                                • Reliable processing of 2GB+ audio files</p>
                         </div>
                         <div class="project-badges">
-                            <span>JavaScript</span><span>Leaflet.js</span><span>Chart.js</span><span>CSS
-                                Grid</span><span>Responsive</span>
+                            <span>Python</span><span>Groq Whisper</span><span>Llama 3.3</span><span>PyDub</span>
                         </div>
-                        <a href="https://github.com/Raum369" target="_blank" class="project-link"
+                        <a href="https://github.com/Raum369/AI-audio-summarizer" target="_blank" class="project-link"
                             data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
                     </div>
                 </div>
@@ -157,60 +134,126 @@
                                 <span class="dot dot-yellow"></span>
                                 <span class="dot dot-green"></span>
                             </div>
-                            <span class="window-title">tms-dashboard — telemetry</span>
+                            <span class="window-title">ai-audio-summarizer</span>
                         </div>
                         <div class="window-body">
-                            <img src="assets/TMS-Logistics.png" alt="Logistics TMS & Telemetry Dashboard" class="window-image">
+                            <img src="assets/AI-audio-summarizer.png" alt="AI Audio Summarizer App" class="window-image">
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- PROJECT 2: Lead Console (with terminal) -->
-            <article class="project-card project-card--featured reveal has-visual" id="project-lead-console">
+            <!-- PROJECT 2: Voice Task Manager -->
+            <article class="project-card reveal has-visual" id="project-voice-task">
                 <div class="project-details">
                     <div class="project-header">
-                        <span class="project-tag project-tag--accent">SaaS / Automation</span>
-                        <h3 class="project-title" data-en="Lead Console — Real-Time Lead Finder"
-                            data-ua="Lead Console — Пошук клієнтів в реальному часі">Lead Console — Real-Time Lead
-                            Finder</h3>
-                        <p class="project-stack">Python · FastAPI · Playwright · WebSockets</p>
+                        <span class="project-tag">AI Agents / Automation</span>
+                        <h3 class="project-title" data-en="AI Voice Task Manager" data-ua="AI Voice Task Manager">AI Voice Task Manager</h3>
+                        <p class="project-stack">Python · Aiogram 3 · Groq Llama · Pydantic</p>
                     </div>
                     <div class="project-body">
-                        <p class="project-desc"
-                            data-en="SaaS platform designed for automated local B2B lead generation. Leveraging background automation to discover local businesses via map services and systematically extract Instagram, Telegram, Viber, and email contacts to accelerate sales outreach."
-                            data-ua="SaaS-платформа для автоматизованого залучення локальних B2B-клієнтів. Використовує фонову автоматизацію для виявлення локальних бізнесів через карти та системного вилучення контактів Instagram, Telegram, Viber та пошти для прискорення продажів.">
-                            SaaS platform designed for automated local B2B lead generation. Leveraging background
-                            automation to discover local businesses via map services and systematically extract
-                            Instagram, Telegram, Viber, and email contacts to accelerate sales outreach.</p>
-                        <ul class="project-features">
-                            <li data-en="Automated business discovery and listing profiling powered by headless browser automation"
-                                data-ua="Автоматизоване виявлення та профілювання бізнесів за допомогою безголової автоматизації браузера">
-                                Automated business discovery and listing profiling powered by headless browser
-                                automation</li>
-                            <li data-en="Multi-channel contact extraction engine mapping social profiles and emails in parallel"
-                                data-ua="Двигун багатоканального збору контактів для паралельного пошуку соцмереж та пошти">
-                                Multi-channel contact extraction engine mapping social profiles and emails in parallel
-                            </li>
-                            <li data-en="Live pipeline tracking interface driven by asynchronous FastAPI WebSockets"
-                                data-ua="Дашборд відстеження прогресу пошуку в реальному часі через асинхронні FastAPI WebSockets">
-                                Live pipeline tracking interface driven by asynchronous FastAPI WebSockets</li>
-                        </ul>
-                        <div class="project-challenge">
-                            <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️
-                                Under the Hood & Challenge</h5>
-                            <p data-en="Built a resilient extraction pipeline capable of bypassing aggressive rate limits and anti-bot protections. Deployed an asynchronous task worker network with real-time state synchronization via WebSockets, allowing smooth pause, resume, and cancellation flows."
-                                data-ua="Створено стійкий конвеєр вилучення даних, що обходить ліміти запитів та антифрод-системи. Розроблено асинхронну мережу таск-воркерів із синхронізацією стану через WebSockets, що підтримує функції паузи, відновлення та скасування.">
-                                Built a resilient extraction pipeline capable of bypassing aggressive rate limits and
-                                anti-bot protections. Deployed an asynchronous task worker network with real-time state
-                                synchronization via WebSockets, allowing smooth pause, resume, and cancellation flows.
-                            </p>
+                        <div class="project-desc">
+                            <p><strong>❓ PROBLEM:</strong><br>
+                                Busy professionals struggle to manually log tasks, set priorities, and track deadlines on the go, leading to disorganized workflows.</p>
+                            <p><strong>🖌 SOLUTION:</strong><br>
+                                Built an asynchronous Telegram bot that records voice notes, transcribes them, and extracts structured semantic data (task, priority, deadline) using Pydantic and LLMs, seamlessly syncing with Google Sheets.</p>
+                            <p><strong>🎯 RESULTS:</strong><br>
+                                • Zero-click task logging via voice<br>
+                                • 100% structured data validation<br>
+                                • Resilient hybrid storage fallback</p>
                         </div>
                         <div class="project-badges">
-                            <span>Playwright</span><span>WebSockets</span><span>BS4</span><span>SQLite</span><span>Tailwind
-                                CSS</span>
+                            <span>Aiogram 3</span><span>Llama 3.3</span><span>Pydantic</span><span>Google Sheets API</span>
                         </div>
-                        <a href="https://github.com/Raum369" target="_blank" class="project-link"
+                        <a href="https://github.com/Raum369/AI-voice-task-manager" target="_blank" class="project-link"
+                            data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="window-mockup">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="window-title">ai-voice-task-manager</span>
+                        </div>
+                        <div class="window-body">
+                            <img src="assets/telegram-chanel.png" alt="Voice Task Manager Bot" class="window-image">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 3: Agro-TMS -->
+            <article class="project-card reveal has-visual" id="project-tms">
+                <div class="project-details">
+                    <div class="project-header">
+                        <span class="project-tag">Logistics / AI Routing</span>
+                        <h3 class="project-title" data-en="Agro-TMS & AI Route Optimization"
+                            data-ua="Agro-TMS та AI Маршрутизація">Agro-TMS & AI Route Optimization</h3>
+                        <p class="project-stack">JavaScript · Leaflet.js · Chart.js · WebSockets</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-desc">
+                            <p><strong>❓ PROBLEM:</strong><br>
+                                Dispatchers coordinated freight bids and tracked vehicles across separate tools — causing high latency, delayed client updates, and suboptimal truck routing.</p>
+                            <p><strong>🖌 SOLUTION:</strong><br>
+                                Built a web dashboard with real-time GPS telemetry, automated dispatching, freight bidding simulation, and implemented AI-assisted route optimization algorithms to minimize deadhead miles.</p>
+                            <p><strong>🎯 RESULTS:</strong><br>
+                                • 75% reduction in dispatch latency<br>
+                                • Accurate ETAs via GPS simulation<br>
+                                • Unified tracking and dispatch in one map</p>
+                        </div>
+                        <div class="project-badges">
+                            <span>JavaScript</span><span>Leaflet.js</span><span>AI Routing</span><span>WebSockets</span>
+                        </div>
+                        <a href="https://github.com/Raum369/Agro-TMS" target="_blank" class="project-link"
+                            data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="window-mockup">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="window-title">agro-tms — telemetry</span>
+                        </div>
+                        <div class="window-body">
+                            <img src="assets/TMS-Logistics.png" alt="Agro-TMS Dashboard" class="window-image">
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 4: Lead Console -->
+            <article class="project-card reveal has-visual" id="project-lead-console">
+                <div class="project-details">
+                    <div class="project-header">
+                        <span class="project-tag">AI Scraping / Data Engineering</span>
+                        <h3 class="project-title" data-en="Lead Console — AI Lead Enricher"
+                            data-ua="Lead Console — AI Збагачення лідів">Lead Console — AI Lead Enricher</h3>
+                        <p class="project-stack">Python · FastAPI · Playwright · LLM</p>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-desc">
+                            <p><strong>❓ PROBLEM:</strong><br>
+                                Sales teams spent countless hours manually searching for local B2B prospects, resulting in slow outreach and poor lead qualification.</p>
+                            <p><strong>🖌 SOLUTION:</strong><br>
+                                Engineered an AI-driven background automation platform using Playwright and LLMs to discover businesses, evaluate their relevance, and extract enriched multi-channel contact data into a unified pipeline.</p>
+                            <p><strong>🎯 RESULTS:</strong><br>
+                                • Automated 100% of manual lead search<br>
+                                • Intelligent filtering of irrelevant prospects<br>
+                                • Real-time WebSocket progress tracking</p>
+                        </div>
+                        <div class="project-badges">
+                            <span>Playwright</span><span>LLM Integration</span><span>FastAPI</span><span>WebSockets</span>
+                        </div>
+                        <a href="https://github.com/Raum369/Lead-Enricher" target="_blank" class="project-link"
                             data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
                     </div>
                 </div>
@@ -270,183 +313,7 @@
                 </div>
             </article>
 
-            <!-- PROJECT 3: Raum AI News -->
-            <article class="project-card reveal has-visual" id="project-news-digest">
-                <div class="project-details">
-                    <div class="project-header">
-                        <span class="project-tag">Telegram Channel / AI</span>
-                        <h3 class="project-title" data-en="Raum AI News" data-ua="Raum AI News">Raum AI News</h3>
-                        <p class="project-stack">Python · Telethon · Gemini API · SQLite · APScheduler</p>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-desc"
-                            data-en="Autonomous AI news channel publisher. Polls global RSS feeds, evaluates and ranks articles by importance using LLM agents, and formats & publishes the highest-scoring news directly to the Telegram channel."
-                            data-ua="Автономний видавець новинного ШІ-каналу. Збирає глобальні RSS-стрічки, оцінює та ранжує статті за важливістю за допомогою LLM-агентів, форматує та публікує найцінніші новини безпосередньо в Telegram-канал.">
-                            Autonomous AI news channel publisher. Polls global RSS feeds, evaluates and ranks articles by importance using LLM agents, and formats & publishes the highest-scoring news directly to the Telegram channel.</p>
-                        <ul class="project-features">
-                            <li data-en="Automated RSS parser polling multi-source tech feeds in parallel"
-                                data-ua="Автоматичний RSS-парсер, що паралельно опитує технологічні джерела">
-                                Automated RSS parser polling multi-source tech feeds in parallel</li>
-                            <li data-en="LLM importance-scoring engine filtering out duplicates and noise"
-                                data-ua="Модуль оцінки важливості новин на базі LLM для фільтрації шуму й дублікатів">
-                                LLM importance-scoring engine filtering out duplicates and noise</li>
-                            <li data-en="Content enhancement layer summarizing key facts and adding media assets"
-                                data-ua="Збагачення контенту: стисле резюме фактів та додавання медіа-ресурсів">
-                                Content enhancement layer summarizing key facts and adding media assets</li>
-                            <li data-en="High-quality channel publisher using Telethon & Telegram API"
-                                data-ua="Публікація в канал з високою якістю оформлення через Telethon & Telegram API">
-                                High-quality channel publisher using Telethon & Telegram API</li>
-                        </ul>
-                        <div class="project-challenge">
-                            <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️
-                                Under the Hood & Challenge</h5>
-                            <p data-en="Designed a custom ranking mechanism that filters out low-value articles using strict JSON schema evaluations. Handled parallel polling limits with polite delay queues, and configured safe execution loops with APScheduler."
-                                data-ua="Розроблено кастомний механізм ранжування для фільтрації малоінформативних статей через сувору валідацію схем JSON. Оброблено ліміти запитів за допомогою черг затримок та налаштовано стійкі цикли виконання з APScheduler.">
-                                Designed a custom ranking mechanism that filters out low-value articles using strict JSON
-                                schema evaluations. Handled parallel polling limits with polite delay queues, and
-                                configured safe execution loops with APScheduler.</p>
-                        </div>
-                        <div class="project-badges">
-                            <span>Python</span><span>Telethon</span><span>Gemini API</span><span>SQLite</span><span>APScheduler</span>
-                        </div>
-                        <a href="https://github.com/Raum369" target="_blank" class="project-link"
-                            data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
-                    </div>
-                </div>
-                <div class="project-visual">
-                    <div class="window-mockup">
-                        <div class="window-header">
-                            <div class="window-dots">
-                                <span class="dot dot-red"></span>
-                                <span class="dot dot-yellow"></span>
-                                <span class="dot dot-green"></span>
-                            </div>
-                            <span class="window-title">raum-ai-news — telegram-channel</span>
-                        </div>
-                        <div class="window-body">
-                            <img src="assets/telegram-chanel.png" alt="Raum AI News Telegram Channel" class="window-image">
-                        </div>
-                    </div>
-                </div>
-            </article>
 
-            <!-- PROJECT 4: Raum Voice Butler -->
-            <article class="project-card reveal has-visual" id="project-audio-bot">
-                <div class="project-details">
-                    <div class="project-header">
-                        <span class="project-tag">Telegram Bot / AI</span>
-                        <h3 class="project-title" data-en="Raum Voice Butler" data-ua="Raum Voice Butler">Raum Voice Butler</h3>
-                        <p class="project-stack">Python · Aiogram 3 · Groq Whisper · Llama 3.3</p>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-desc"
-                            data-en="An intelligent asynchronous Telegram Bot that processes voice messages, transcribes speech using Groq Whisper, extracts task semantics using Groq Llama 3.3, and logs tasks to Google Sheets."
-                            data-ua="Інтелектуальний асинхронний Telegram-бот, який обробляє голосові повідомлення, розпізнає мову через Groq Whisper, структурує завдання через Groq Llama 3.3 та записує їх у Google Sheets.">
-                            An intelligent asynchronous Telegram Bot that processes voice messages, transcribes speech using Groq Whisper, extracts task semantics using Groq Llama 3.3, and logs tasks to Google Sheets.</p>
-                        <ul class="project-features">
-                            <li data-en="Voice note transcription (.ogg) using Groq Whisper-large-v3"
-                                data-ua="Розпізнавання голосових нотаток (.ogg) через Groq Whisper-large-v3">
-                                Voice note transcription (.ogg) using Groq Whisper-large-v3</li>
-                            <li data-en="Semantic extraction of task summary, details, priority, and category via Llama 3.3"
-                                data-ua="Семантичний аналіз тексту: суть завдання, опис, категорія та пріоритет через Llama 3.3">
-                                Semantic extraction of task summary, details, priority, and category via Llama 3.3</li>
-                            <li data-en="Smart relative date calculation (e.g., 'tomorrow evening') from text"
-                                data-ua="Розумне обчислення дедлайнів на основі відносних часових виразів">
-                                Smart relative date calculation (e.g., 'tomorrow evening') from text</li>
-                            <li data-en="Hybrid storage with Google Sheets API and local CSV fallback"
-                                data-ua="Гібридне збереження даних у Google-таблиці з резервним копіюванням у локальний CSV">
-                                Hybrid storage with Google Sheets API and local CSV fallback</li>
-                        </ul>
-                        <div class="project-challenge">
-                            <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️
-                                Under the Hood & Challenge</h5>
-                            <p data-en="Built a multi-stage audio segmenter using PyDub to process massive audio uploads. Implemented structured Pydantic data extraction and a resilient hybrid storage adapter that guarantees data survival during API downtime."
-                                data-ua="Створено багатошаровий сегментатор аудіо на PyDub для великих файлів. Впроваджено структурований вивід даних через Pydantic та надійний гібридний адаптер збереження для захисту даних у разі збоїв API.">
-                                Built a multi-stage audio segmenter using PyDub to process massive audio uploads.
-                                Implemented structured Pydantic data extraction and a resilient hybrid storage adapter
-                                that guarantees data survival during API downtime.</p>
-                        </div>
-                        <div class="project-badges">
-                            <span>Aiogram 3</span><span>Groq Whisper</span><span>Llama 3.3</span><span>Google Sheets API</span><span>PyDub</span>
-                        </div>
-                        <a href="https://github.com/Raum369" target="_blank" class="project-link"
-                            data-en="View on GitHub →" data-ua="Переглянути на GitHub →">View on GitHub →</a>
-                    </div>
-                </div>
-                <div class="project-visual">
-                    <div class="window-mockup">
-                        <div class="window-header">
-                            <div class="window-dots">
-                                <span class="dot dot-red"></span>
-                                <span class="dot dot-yellow"></span>
-                                <span class="dot dot-green"></span>
-                            </div>
-                            <span class="window-title">raum-voice — assistant</span>
-                        </div>
-                        <div class="window-body">
-                            <img src="assets/AI-audio-summarizer.png" alt="Raum Voice Butler App" class="window-image">
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PROJECT 5: Raum Solfeggio Sanctuary -->
-            <article class="project-card reveal has-visual" id="project-solfeggio">
-                <div class="project-details">
-                    <div class="project-header">
-                        <span class="project-tag">Audio / UI-UX</span>
-                        <h3 class="project-title" data-en="Raum Solfeggio Sanctuary" data-ua="Raum Solfeggio Sanctuary">Raum Solfeggio Sanctuary</h3>
-                        <p class="project-stack">HTML5 · Vanilla CSS · Web Audio API · Canvas API</p>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-desc"
-                            data-en="A premium minimalist ambient sound synthesizer application. Generates pure Solfeggio frequencies and binaural beats in real time directly in the browser, featuring an Apple/Endel-inspired design."
-                            data-ua="Преміальний мінімалістичний синтезатор фонових звуків. Генерує частоти Сольфеджіо та бінауральні ритми в реальному часі безпосередньо в браузері з преміальним дизайном у стилі Apple / Endel.">
-                            A premium minimalist ambient sound synthesizer application. Generates pure Solfeggio frequencies and binaural beats in real time directly in the browser, featuring an Apple/Endel-inspired design.</p>
-                        <ul class="project-features">
-                            <li data-en="Real-time sound synthesis using Web Audio API (Drone Pad + 4 Harmonics + Sub-Bass)"
-                                data-ua="Генерація звуку в реальному часі через Web Audio API (основа + 4 гармоніки + суб-бас)">
-                                Real-time sound synthesis using Web Audio API (Drone Pad + 4 Harmonics + Sub-Bass)</li>
-                            <li data-en="Stereo Filtered Wind Noise modulated by slow LFOs imitating deep breathing"
-                                data-ua="Стерео-шум вітру та хвиль, що плавно модулюється LFO для імітації дихання океану">
-                                Stereo Filtered Wind Noise modulated by slow LFOs imitating deep breathing</li>
-                            <li data-en="Binaural beats generation (Delta, Theta, Alpha, Beta, Gamma brain waves)"
-                                data-ua="Стимуляція мозкової активності бінауральними хвилями (Delta, Theta, Alpha, Beta, Gamma)">
-                                Binaural beats generation (Delta, Theta, Alpha, Beta, Gamma brain waves)</li>
-                            <li data-en="Interactive constellation Canvas animation and fluid morphing bubble responding to audio"
-                                data-ua="Інтерактивна Canvas-анімація сузір'їв та аморфна сфера, що вібрує в такт музиці">
-                                Interactive constellation Canvas animation and fluid morphing bubble responding to audio</li>
-                        </ul>
-                        <div class="project-challenge">
-                            <h5 data-en="⚙️ Under the Hood & Challenge" data-ua="⚙️ Деталі реалізації та виклики">⚙️ Under
-                                the Hood & Challenge</h5>
-                            <p data-en="Designed a custom zero-latency audio engine utilizing AudioNode pipelines. Engineered a 64-channel low-pass smoothing filter to map real-time audio analysis into fluid organic canvas deformations. Implemented Zero UI mode that fades out controls for deep focus."
-                                data-ua="Спроектовано звуковий двигун із нульовою затримкою на вузлах Web Audio API. Розроблено 64-канальний фільтр низьких частот для плавного відображення амплітуд на деформацію 3D-подібної Canvas-сфери. Додано Zero UI режим для фокусування.">
-                                Designed a custom zero-latency audio engine utilizing AudioNode pipelines. Engineered a 64-channel low-pass smoothing filter to map real-time audio analysis into fluid organic canvas deformations. Implemented Zero UI mode that fades out controls for deep focus.</p>
-                        </div>
-                        <div class="project-badges">
-                            <span>Web Audio API</span><span>HTML5 Canvas</span><span>Vanilla JS</span><span>CSS Animations</span><span>Zero UI</span>
-                        </div>
-                        <a href="https://github.com/Raum369" target="_blank" class="project-link" data-en="View on GitHub →"
-                            data-ua="Переглянути на GitHub →">View on GitHub →</a>
-                    </div>
-                </div>
-                <div class="project-visual">
-                    <div class="window-mockup is-portrait">
-                        <div class="window-header">
-                            <div class="window-dots">
-                                <span class="dot dot-red"></span>
-                                <span class="dot dot-yellow"></span>
-                                <span class="dot dot-green"></span>
-                            </div>
-                            <span class="window-title">raum-solfeggio — soundscape</span>
-                        </div>
-                        <div class="window-body">
-                            <img src="assets/raum-solfeggio.png" alt="Raum Solfeggio Sanctuary soundscape" class="window-image">
-                        </div>
-                    </div>
-                </div>
-            </article>
 
         </div>
     </section>
